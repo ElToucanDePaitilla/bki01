@@ -32,10 +32,32 @@ a {
     text-decoration: none;
 }
 
+/**titres: début**/
+
 .section-title {
     margin: 0;
     font-size: 22px;
 }
+
+.card-title {
+    font-size: 16px;
+    
+    
+}
+
+#afficher-plus{
+    font-size: 18px;
+    padding-top: 35px;
+    
+}
+
+.footer-rubrique-title {
+    font-size: 18px;
+}
+
+
+/**titres: fin**/
+
 
 .card {
     background-color: white;
@@ -48,9 +70,6 @@ a {
     object-fit: cover;
 }
 
-.card-title {
-    font-size: 16px;
-}
 
 .euro {
     font-weight: 700;
@@ -232,7 +251,7 @@ a {
 
 .btn-filtre:hover {
     background-color: var(--filter-bg-color);
-    cursor: ;
+    cursor: pointer;
 }
 
 /**Message d'information : Plus de 500 logements ... dans cette ville**/
@@ -271,7 +290,7 @@ a {
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -280,13 +299,25 @@ a {
 .hebergements {
     width: 65%;
 }
-/*début ajout code jl**/
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    /**border: 4px solid red;**/
+    /**margin-top: -20px**/   
+}
 
 .hebergements .card {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
     box-sizing: border-box;
+    display: flex;
+    flex: 0 0 30%;
+    flex-direction: column;
+    /**border: 4px solid blue;**/
+    margin-top: 33px;
+    height: 207.25px;
+    width: 250.33px;
+    border-radius: 24px;
 }
 
 .hebergements .card-content {
@@ -299,18 +330,10 @@ a {
     align-items: center;
 }
 
-.hebergements-cards .card {
-    display: flex;
-    margin-top: 33px;
-}
-
 .hebergements-cards img {
-    object-fit: cover;/**L'image est redimensionnée pour couvrir entièrement
-                         le conteneur tout en conservant son rapport hauteur/largeur.
-                         Cela peut entraîner une partie de l'image coupée si
-                         le rapport hauteur/largeur de l'image est différent de celui
-                         du conteneur.**/
-    height: 136px;
+    height: 124px;
+    width:100%;
+    min-width:30%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -336,10 +359,6 @@ a {
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
 }
-/** fin ajout code jl **/
-
-
-
 
 /****** Populaires ***********/
 .populaires {
@@ -386,9 +405,6 @@ a {
     margin-bottom: 5px;
 }
 
-
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -411,7 +427,6 @@ a {
 .hebergements-cards { /**??? et autres classes**/
 
 }
-
 
 /**prévoir la section hébergements**/
 
