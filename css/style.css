@@ -280,6 +280,66 @@ a {
 .hebergements {
     width: 65%;
 }
+/*début ajout code jl**/
+
+.hebergements .card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.hebergements .card-content {
+    box-sizing: border-box;
+}
+
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.hebergements-cards img {
+    object-fit: cover;/**L'image est redimensionnée pour couvrir entièrement
+                         le conteneur tout en conservant son rapport hauteur/largeur.
+                         Cela peut entraîner une partie de l'image coupée si
+                         le rapport hauteur/largeur de l'image est différent de celui
+                         du conteneur.**/
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+/** fin ajout code jl **/
+
+
+
 
 /****** Populaires ***********/
 .populaires {
@@ -346,6 +406,14 @@ a {
         width: 100%;
         margin-top: 50px;
     }
+
+/**prévoir la section hébergements**/
+.hebergements-cards { /**??? et autres classes**/
+
+}
+
+
+/**prévoir la section hébergements**/
 
     .populaires-cards {
         display: flex;
