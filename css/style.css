@@ -1,18 +1,8 @@
 /*############################# GENERAL: début ###############################*/
 
+/***********  *** Préceptes généraux : début ***************/
 * {
     font-family: 'Raleway', sans-serif;
-}
-
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
-    --border-btn: #D9D9D9;
-}
-
-.fa-solid {
-    color: var(--main-color);
 }
 
 body {
@@ -26,38 +16,88 @@ body {
     padding: 0 50px;
     box-sizing: border-box;
 }
+/**************** Préceptes généraux : fin ***************/
+/**************** Couleurs du sites: début ***************/
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+    --border-btn: #D9D9D9;
+}
+/**************** Couleurs du sites: fin *****************/
+/*****Format général des titres, paragraphes, icones: début ******/
+h1, h2, h3, h4, p {
+    color: #000000;
+}
+
+h1 {/**Titres sections**/
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+}
+
+h2 {/**Titres rubriques du footer, "afficher plus"**/
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+}
+
+h3 {/**Titres cartes**/
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+}
+
+h4 {/**Titres information : ""En plein centre ..." et "Plus de 500 logements ..." et liens des rubriques du footer**/
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+}
+
+p {/**Texte des cartes**/
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.44px;
+}
 
 a {
     color: inherit;
     text-decoration: none;
 }
 
-/**titres: début**/
+.fa-solid {
+    color: var(--main-color);
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+/*******Format des titres, paragraphes, icones: fin *******/
+/**********Format spécifique des titres: début ************/
 
 .section-title {
-    margin: 0;
-    font-size: 22px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .card-title {
-    font-size: 16px;
-    
-    
+    font-size: 16px;   
 }
 
 #afficher-plus{
     font-size: 18px;
-    padding-top: 35px;
-    
+    padding-top: 0px;
 }
 
 .footer-rubrique-title {
     font-size: 18px;
 }
-
-
-/**titres: fin**/
-
+/**********Format spécifique des titres: fin ************/
 
 .card {
     background-color: white;
@@ -70,14 +110,6 @@ a {
     object-fit: cover;
 }
 
-
-.euro {
-    font-weight: 700;
-}
-
-.neutral-star {
-    color: var(--main-bg-color)
-}
 /*############################# GENERAL: fin ###############################*/
 /*############################# HEADER: début ###############################*/
 
@@ -123,23 +155,20 @@ a {
 }
 
 .menu-ancres-liste a:hover {
+    color: var(--main-color);
     border-top: 3px solid var(--main-color);
 }
 
 /**Titre h1 et base-line**/
 
 .titre-header {
-    font-size: 22px;
-    font-weight:700;
-    line-height: 25.83px;
+    margin-top: 0px;
     color: #000000;
 }
 
 .commentaire-header {
-    font-size: 16px;
-    font-weight:400;
-    line-height: 18.78px;
     color: #000000;
+    margin-top: 0px;
     
 }
 
@@ -148,8 +177,8 @@ a {
 .barre-localisation {
     display:flex;
     justify-content: flex-start;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     height: 60px;
 }
 
@@ -178,7 +207,6 @@ a {
     font-weight: 700;
     text-align: center;
     color: #000000;
-
 }
 
 #formulaire-localisation {
@@ -227,15 +255,14 @@ a {
     display:flex;
     justify-content: flex-start;
     height: 60px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .titre-filtre {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21.13px;
-    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
 }
 
 .btn-filtre {
@@ -246,7 +273,7 @@ a {
     border: 2px solid var(--border-btn);
     border-radius: 50px;
     padding: 4px 19px 4px 19px;
-    margin-right: 10px; 
+    margin-right: 15px; 
 }
 
 .btn-filtre:hover {
@@ -300,6 +327,11 @@ a {
     width: 65%;
 }
 
+.hebergements-title {
+    
+}
+
+
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
@@ -311,7 +343,8 @@ a {
     display: flex;
     /**flex: 0 0 30%;**/
     flex-direction: column;
-    margin-top: 33px;
+    margin-top: 0px;
+    margin-bottom: 30px;
     height: 207.25px;
     width: 250.33px;
     border-radius: 24px;
@@ -319,12 +352,6 @@ a {
 
 .hebergements .card-content {
     box-sizing: border-box;
-}
-
-.hebergements-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .hebergements-cards img {
@@ -370,7 +397,8 @@ a {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 0px;
+    margin-bottom: 30px;
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
 }
@@ -403,21 +431,20 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+.icone-size {/**Taille de l'icone**/
+    font-size: 20px;
+}
+
 /****** Populaires: fin ***********/
-/****** Activites: début **********/
+/****** Activités-Marseille: début **********/
 
 #activites {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
-    /**background-color: powderblue;**/
     margin-top: 30px;
-        }
-
-.section-activites-Marseille {
-    
-
 }
 
 .activites-cards {
@@ -433,8 +460,6 @@ a {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
-
 
 .section-activites-Marseille .card {
     height: 439px;
@@ -454,9 +479,48 @@ a {
     margin-left: 20px;
 }
 
-/****** Activités: fin ************/
+/****** Activités Marseille: fin ************/
+/*############################# MAIN: fin ###############################*/
+/*############################# FOOTER: début ###########################*/
+
+.footer {
+    background-color: var(--main-bg-color);
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    }
+
+.footer section {
+    width: 33.3%;
+    padding-left: 0px;
+}
+    
+.footer ul {
+    list-style-type: none;
+    margin-left: -30px;  
+}
+
+.footer ul li {
+    font-size: 16px;
+    padding-top: 15px;  
+}
+
+.footer ul li:first-child {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+    padding-top: 10px;   
+}
+
+.footer ul li:last-child {
+    padding-bottom: 11px;    
+}
+/*############################# FOOTER: fin ################################*/
+/*############################# RESPONSIVE: début ##########################*/
 
 
+/** Non commencé **/
 
 
 
@@ -509,3 +573,5 @@ a {
 @media (max-width: 767.98px) {
     /* ... */
 }
+
+/*############################# RESPONSIVE: fin ##########################*/
