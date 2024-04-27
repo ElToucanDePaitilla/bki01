@@ -97,15 +97,6 @@ a {
 /*******Format des titres, paragraphes, icones: fin *******/
 /**********Format spécifique des titres: début ************/
 
-.section-title {
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-.card-title {
-    font-size: 16px;   
-}
-
 #afficher-plus{
     font-size: 18px;
     padding-top: 0px;
@@ -359,7 +350,7 @@ a {
 }
 
 .hebergements-cards .card {  
-    width: calc(33% - 30px);   
+    width: 30%;   
     margin-top: 0px;
     margin-bottom: 30px;
     height: 207.25px;  
@@ -369,6 +360,8 @@ a {
 .hebergements h2 {
     padding-top: 7px;
     padding-bottom: 7px;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .hebergements a {
@@ -390,11 +383,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.hebergements h2 {
-    margin-bottom: 25px;
-    margin-top: 25px;
 }
 
 .hebergements-cards .card-title {
@@ -481,54 +469,53 @@ a {
 /****** Populaires: fin ***********/
 /****** Activités-Marseille: début **********/
 
+/**activites**/
 .activites {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
-    margin-top: 30px;
-    border: 1px solid greenyellow;   
+    margin-top: 30px; 
 }
 
-.activites h5 {
-    margin-top: 15px;
-    color: red;
+.activites h2 {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom : 30px;
 }
+
+/* activites-cards */
 
 .activites-cards {
     display: flex;
-    justify-content: space-between;
-    /**justify-content: space-between;**/
-    /**padding-left: 30px;
-    padding-right: 30px;**/
-    gap: 20px;
-    border: 1px solid violet;
+    gap: 30px;
 }
 
-.activites-cards .card {
-    width: 250px;
+.activites-cards a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.activites-cards .card {  
     height: 439px;
     border-radius: 24px;
-    /**padding: 0px;
-    margin: 20px;**/
-}
+    padding: 0px;
+} 
 
-.activites-title {
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-
-
-.activites img {
+.activites-cards img { 
     height: 380px;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.activites .card-title {
+.activites-cards h5 {
+    display: block;
+    margin-top: 20px;
+}
+
+.activites-cards .card-title {
     margin-left: 20px;
 }
 
@@ -540,8 +527,7 @@ a {
     background-color: var(--main-bg-color);
     margin-top: 60px;
     display: flex;
-    justify-content: flex-start;
-    
+    justify-content: flex-start; 
 }
 
 .footer nav {
