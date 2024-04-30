@@ -110,10 +110,10 @@ a {
 /**********Format des cartes: début **********/
 
 .card {
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 3px 15px rgba(255, 0, 0, 0.1));
 }
 
 .card img {
@@ -357,7 +357,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
     overflow: hidden; /* Pour gérer le dépassement de contenu */
     word-wrap: break-word;/*Coupe les mots pour éviter qu'ils ne sortent par le côté droit de la carte."*/
 }
@@ -382,6 +381,7 @@ a {
     font-size: 18px;
     font-weight: 700;
     line-height: 21.13px;
+    
 }
 
 .hebergements-cards img {
@@ -409,7 +409,6 @@ a {
     margin: 0;
     padding-right: 10px;
 }
-
 
 .hebergements-cards .card-rating {
     margin-top: 6px;
@@ -509,7 +508,7 @@ a {
 
 /* activites-cards */
 
-.activites .activites-cards {
+.activites-cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -585,157 +584,214 @@ a {
 /*############################# RESPONSIVE: début ##########################*/
 /*############################# RESPONSIVE: début ##########################*/
 /*############################# RESPONSIVE: début ##########################*/
-
-@media (max-width: 1024px) {/* Medium devices (tablets, less/equal than 1024px) */
-
-    /*bandeau : ancres*/
-    
-    /**Barre des filtres**/
-    
-    .titre-et-barre {
-        display:flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .titre-filtre {
-        display: flex;
-        align-items: center;
-        margin-right: 15px;
-    }
-    
-    .barre {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .barre h4 {
-        font-size: 16px;
-    }
-    
-    /*Section hébergements*/
-    .hebergements-and-populaires {
-        flex-direction: column;
-        margin-right: 60px;
-    }
-    
-    .hebergements-and-populaires section {
-        flex-direction: column;
-        margin-top: px;
-    }
-    
-    .hebergements {
-        width: 100%;
-    }
-    
-    .populaires {
-        width: 100%;
-    }
-    
-    /*Section activités*/
-    
-    .activites-cards .card {
-        height:  270px;  
-    }
-    
-    .activites-cards img { 
-        height: 200px;
-        min-height: 200px;
-        width: 100%;  
-    }
-    
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .populaires-cards a {
-        width: 30%;
-    }
-    
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-    
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-    
-    }
-
-@media (max-width: 767.98px) {/* Small devices (phones, less than 768px) */
-
-/*Bandeau*/
-
-.bandeau {
-    display:flex;
-    flex-direction: column;
-}
+/*############################# RESPONSIVE: début ##########################*/
+/*############################# RESPONSIVE: début ##########################*/
+/*############################# RESPONSIVE: début ##########################*/
 
 
-.centrage-logo { 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items : center;
-    padding: 30px;
-}
+
+/*##########################################################################*/    
+@media (max-width: 1024px) {/* Medium devices (tablets, less/equal than 1024px)*/
+/*##########################################################################*/      
+
+/*************************** RESPONSIVE: Header *****************************/                          
+
+                            /**RESPONSIVE: Barre des filtres**/
+                            
+                            .titre-et-barre {
+                                display:flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                            }
+                            
+                            .titre-filtre {
+                                display: flex;
+                                align-items: center;
+                                margin-right: 15px;
+                            }
+                            
+                            .barre {
+                                display: flex;
+                                flex-direction: row;
+                            }
+                            
+                            .barre h4 {
+                                font-size: 16px;
+                            }
+                            
+                            /*RESPONSIVE: Section hébergements*/
+
+                            .hebergements-and-populaires {
+                                flex-direction: column;
+                                margin-right: 60px;
+                            }
+
+                            .hebergements-and-populaires section {
+                                flex-direction: column;
+                                margin-top: px;
+                            }
+                            
+                            .hebergements {
+                                width: 100%;
+                            }
+                            
+                            section.hebergements {
+                                border-radius: 0px;
+                                background-color: #ffffff;
+                            }
+
+                            .populaires {
+                                width: 100%;
+                            }
+                            
+                            /*RESPONSIVE: Section activités*/
+                            
+                            .activites-cards .card {
+                                height:  270px;  
+                            }
+                            
+                            .activites-cards img { 
+                                height: 200px;
+                                min-height: 200px;
+                                width: 100%;  
+                            }
+                            
+                            .populaires-cards {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                            }
+                            
+                            .populaires-cards a {
+                                width: 30%;
+                            }
+                            
+                            .populaires-cards .card-title {
+                                font-size: 14px;
+                            }
+                            
+                            .populaires-cards .card-subtitle {
+                                font-size: 13px;
+                            }
+                            
+                            }
+
+
+/*##########################################################################*/  
+@media (max-width: 767.98px) {/* Small devices (phones, less than 768px)*/
+/*##########################################################################*/  
   
-/**Barre de localisation**/
+/*************************** RESPONSIVE: Header *****************************/
 
-.barre-localisation {
-    display:flex;
-    justify-content: center;
-}
+                            /*REPONSIVE: Bandeau*/
 
-.champs-rechercher {
-    width: 220px; /*AJJJOOOOUUUUTTTERRRRRRRRRRRRRRRRRRRRRRR longueur*/
-    height: 45px;
-}
+                            .bandeau {
+                                display:flex;
+                                flex-direction: column;
+                            }
 
-#formulaire-localisation {
-    display: flex; 
-    }
+                            .centrage-logo { 
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items : center;
+                                padding: 30px;
+                            }
+                            
+                            /*RESPONSIVE :Barre de localisation*/
 
-#btn-rechercher1 { /* Rend invisible le bouton 1 en mode mobile*/   
-    display: none;
-}
+                            .barre-localisation {
+                                display:flex;
+                                justify-content: center;
+                            }
 
-.fa-solid.fa-magnifying-glass {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--main-color);    
-    border-radius: 15px;
-    width: 49px;
-    height: 49px;
-    margin-left: -15px;
-}
+                            .champs-rechercher {
+                                width: 220px;
+                                height: 45px;
+                            }
 
-}
+                            #formulaire-localisation {
+                                display: flex; 
+                                }
 
+                            #btn-rechercher1 { /* Rend invisible le bouton 1 en mode mobile*/   
+                                display: none;
+                            }
 
+                            .fa-solid.fa-magnifying-glass {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: var(--main-color);    
+                                border-radius: 15px;
+                                width: 49px;
+                                height: 49px;
+                                margin-left: -15px; 
+                            }
 
+                            input #btn-rechercher2 {
+                                filter: drop-shadow(1px 3px 15px #0000001a); /*Ne fonctionne pas*/;
+                            }
 
+/*************** RESPONSIVE: Hébergements, Populaires, Activités ********************/
 
+                            /*RESPONSIVE: hébergements et populaires*/
 
+                            .hebergements-and-populaires {
+                                flex-direction: column-reverse;
+                            }
 
+                            /*RESPONSIVE: Hébergements*/
 
+                            .hebergements-cards {
+                                flex-direction: column;
+                            }
 
+                            .hebergements-cards .card {
+                                width: 100%;
+                            }
 
+                            /*RESPONSIVE: Populaires*/
 
+                            .populaires-cards {
+                                flex-direction: column;
+                            }
 
+                            .populaires-cards a {
+                                width: 100%
+                            }
 
+                            section.populaires {
+                                border-radius: 0px;
+                            }
 
+                            /*RESPONSIVE: Activités*/
 
+                            .activites-cards {
+                                flex-direction: column;
+                            }
 
+                            .activites-cards .card {
+                                width: 100%
+                            }
 
+/****************************** RESPONSIVE: Footer **********************************/
 
+                            .footer {
+                                flex-direction: column;
+                            }
 
+                            .footer nav {
+                                width: 100%;
+                            }
 
-
-
-}
-    
-    
+                            }
+                            
+/*############################# RESPONSIVE: fin ###########################*/
+/*############################# RESPONSIVE: fin ###########################*/
+/*############################# RESPONSIVE: fin ###########################*/
+/*############################# RESPONSIVE: fin ###########################*/
+/*############################# RESPONSIVE: fin ###########################*/
+/*############################# RESPONSIVE: fin ###########################*/
+/*############################# RESPONSIVE: fin ###########################*/
+/*############################# RESPONSIVE: fin ###########################*/
