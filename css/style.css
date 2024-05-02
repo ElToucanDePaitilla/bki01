@@ -25,6 +25,8 @@ body {
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
     --border-btn: #D9D9D9;
+    --card-bg-color: #ffffff;
+
     box-sizing: border-box;
 }
 
@@ -110,7 +112,7 @@ a {
 /**********Format des cartes: début **********/
 
 .card {
-    background-color: #ffffff;
+    background-color: var(--card-bg-color);
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(255, 0, 0, 0.1));
@@ -380,8 +382,7 @@ a {
 .hebergements a {
     font-size: 18px;
     font-weight: 700;
-    line-height: 21.13px;
-    
+    line-height: 21.13px; 
 }
 
 .hebergements-cards img {
@@ -463,7 +464,6 @@ a {
     padding-right: 10px;
 }
 
-
 .populaires h1 {
     margin-bottom: 30px;
 }
@@ -516,7 +516,9 @@ a {
     gap: 10px;
 }
 
-.activites-cards .card {  
+.activites-cards .card { 
+    display: flex;
+    flex-direction: column; 
     height: 439px;
     width: calc(25% - 30px);
     border-radius: 24px;
@@ -532,7 +534,7 @@ a {
 }
 
 .activites-cards h5 {
-    padding-top: 13px;
+    
 
 }
 
@@ -635,11 +637,6 @@ a {
                                 width: 100%;
                             }
                             
-                            section.hebergements {
-                                border-radius: 0px;
-                                background-color: #ffffff;
-                            }
-
                             .populaires {
                                 width: 100%;
                             }
@@ -676,12 +673,18 @@ a {
                             
                             }
 
-
 /*##########################################################################*/  
 @media (max-width: 767.98px) {/* Small devices (phones, less than 768px)*/
 /*##########################################################################*/  
   
 /*************************** RESPONSIVE: Header *****************************/
+
+                            
+                            /*RESPONSIVE: main*/
+
+                            .main-container {
+                                padding: 0px 0px;
+                            }
 
                             /*REPONSIVE: Bandeau*/
 
@@ -695,9 +698,52 @@ a {
                                 flex-direction: row;
                                 justify-content: center;
                                 align-items : center;
-                                padding: 30px;
+                                padding-top: 30px;
+                                padding-bottom: 30px;
                             }
                             
+                            /*REPONSIVE: Ancres*/
+
+                            .menu-ancres {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                margin-bottom: 30px;
+                                padding-left: 0px;
+                                width: 100%;
+                            }
+
+                            .menu-ancres-liste a:hover {/*couleur transparente)*/
+                                border-top: 3px solid #ffffff00;
+                            }
+
+                                                    /*test soulignement*/
+                                                    .bandeau {
+                                                        margin-bottom: 20px;
+
+                                                    }
+                                                    .hover {
+                                                        display: flex;
+                                                        flex-direction: flex-start;   
+                                                    }
+
+                                                    .hover1 {
+                                                        width: 50%;
+                                                        border: 2px solid var(--border-btn);
+                                                    }
+                                                    .hover2 {
+                                                        width: 50%;
+                                                        border: 2px solid var(--border-btn);
+                                                    }
+
+                                                    a[href="#hebergements"]:hover > .hover1 {
+                                                        border: 2px solid green;
+                                                    }
+
+                                                    a[href="#activites"]:hover ~ .hover2 {
+                                                        border: 2px solid green;
+                                                    }
+
                             /*RESPONSIVE :Barre de localisation*/
 
                             .barre-localisation {
@@ -733,6 +779,26 @@ a {
                                 filter: drop-shadow(1px 3px 15px #0000001a); /*Ne fonctionne pas*/;
                             }
 
+                            /*RESPONSIVE :Barre des filtres*/
+
+                            .barre {
+                                flex-direction: row;
+                                justify-content: center;
+                                flex-wrap: wrap;
+                                height: auto;
+                                width: 100%;
+                                gap: 10px;
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                margin-bottom: 30px;
+                            }
+
+                            .btn-filtre {
+                                display: flex;
+                                height: 50px;
+                                width: calc(40% - 30px); 
+                            }
+
 /*************** RESPONSIVE: Hébergements, Populaires, Activités ********************/
 
                             /*RESPONSIVE: hébergements et populaires*/
@@ -743,13 +809,24 @@ a {
 
                             /*RESPONSIVE: Hébergements*/
 
+                            .hebergements-and-populaires .hebergements {
+                                background-color:#ffffff;    
+                                }
+
                             .hebergements-cards {
                                 flex-direction: column;
+                                align-content: center;
                             }
 
                             .hebergements-cards .card {
-                                width: 100%;
+                                width: calc(100% - 0px);
                             }
+
+
+
+
+
+
 
                             /*RESPONSIVE: Populaires*/
 
@@ -769,10 +846,11 @@ a {
 
                             .activites-cards {
                                 flex-direction: column;
+                                align-items: center;
                             }
 
                             .activites-cards .card {
-                                width: 100%
+                                width: calc(100% - 30px);
                             }
 
 /****************************** RESPONSIVE: Footer **********************************/
