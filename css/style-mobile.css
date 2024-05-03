@@ -1,0 +1,180 @@
+ @media (max-width: 768px) {/* Small devices (phones, less than 768px)*/ 
+      
+/*************************** RESPONSIVE: Header *****************************/
+    
+                                
+/*RESPONSIVE: main*/
+
+.main-container {
+    padding: 0px 0px;
+}
+
+/*REPONSIVE: Bandeau*/
+
+.bandeau {
+    display:flex;
+    flex-direction: column;
+}
+
+.centrage-logo { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items : center;
+    padding-top: 30px;
+    
+    margin-bottom: 50px;
+}
+
+/*REPONSIVE: Ancres*/
+
+.menu-ancres {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-inline-start: 0px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    width: 100%;
+    gap: 0px;
+    margin-top: 0px;
+}
+
+.menu-ancres-liste {
+    display: block;/**/
+    box-sizing: border-box;/**/
+    text-align: center;/**/
+    height: 60px;/** avant c'était 100% **/
+    width: 100%;
+    justify-content: center;
+    align-content: center;                              
+}
+
+.menu-ancres-liste a {
+    margin-top: 0px;
+    padding-bottom: 20px;                   
+}
+
+.menu-ancres-liste a:hover {/*couleur transparente)*/                              
+    border-top: 3px solid #ffffff00;    
+}
+
+.menu-ancres-liste:hover {
+    border-top: 2px solid rgba(255, 255, 255, 0);
+    border-bottom: 2px solid var(--main-color);
+}
+
+/*RESPONSIVE : Titre site web et base line*/
+
+.titre-header {
+    margin-top: 50px;
+}
+
+/*RESPONSIVE :Barre de localisation*/
+
+#formulaire-localisation {
+    display: flex; 
+}
+
+.barre-localisation {
+    display:flex;
+    justify-content: center;
+}
+
+.champs-rechercher {
+    width: 220px;
+}
+
+#btn-rechercher1 { /* Rend invisible le bouton 1 en mode mobile*/   
+    display: none;
+}
+
+.fa-solid.fa-magnifying-glass {/*Icone loupe sur fond bleu*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);    
+    border-radius: 15px;
+    width: 49px;
+    height: 49px;
+    margin-left: -15px;
+    filter:var(--shadow-loupe);
+}
+
+/*RESPONSIVE :Barre des filtres*/
+
+.barre {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-filtre {
+    display: flex;
+    height: 50px;
+    width: calc(40% - 30px); 
+}
+
+/*************** RESPONSIVE: Hébergements, Populaires, Activités ********************/
+
+/*RESPONSIVE: hébergements et populaires*/
+
+.hebergements-and-populaires {
+    flex-direction: column-reverse;
+}
+
+/*RESPONSIVE: Hébergements*/
+
+.hebergements-and-populaires .hebergements {
+    background-color:#ffffff;    
+    }
+
+.hebergements-cards {
+    flex-direction: column;
+    align-content: center;
+}
+
+.hebergements-cards .card {
+    width: calc(100% - 0px);
+}
+
+/*RESPONSIVE: Populaires*/
+
+.populaires-cards {
+    flex-direction: column;
+}
+
+.populaires-cards a {
+    width: 100%
+}
+
+section.populaires {
+    border-radius: 0px;
+}
+
+/*RESPONSIVE: Activités*/
+
+.activites-cards {
+    flex-direction: column;
+    align-items: center;
+}
+
+.activites-cards .card {
+    width: calc(100% - 30px);
+}
+
+/****************************** RESPONSIVE: Footer **********************************/
+
+.footer {
+    flex-direction: column;
+}
+
+.footer nav {
+    width: 100%;
+}
+
+}
