@@ -6,3 +6,4 @@ A terminer:
 
 Correctifs à apporter:
 - bug ombre cartes hébergements (j'ai mis ombre en rouge .card pour plus de visibilté)
+- bug image Fort de Pomègues

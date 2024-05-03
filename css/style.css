@@ -23,9 +23,13 @@ body {
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+    --btn-filter-bg-color: #DEEBFF;/*Couleur du fond des boutons filtres*/
     --border-btn: #D9D9D9;
     --card-bg-color: #ffffff;
+    --shadow-card: drop-shadow(0px 3px 15px rgba(0, 26, 255, 0.5));
+    --shadow-loupe:  drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.250));;
+
+
 
     box-sizing: border-box;
 }
@@ -115,7 +119,8 @@ a {
     background-color: var(--card-bg-color);
     border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(255, 0, 0, 0.1));
+    filter: var(--shadow-card);
+
 }
 
 .card img {
@@ -160,17 +165,18 @@ a {
 
 .menu-ancres-liste {
     display: flex;
-    align-items: flex-end;    
+    align-items: flex-end;
+    border-top: 2px solid rgba(255, 255, 255, 0);
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 
 .menu-ancres-liste a {
-    padding-top: 22px;
-    
+    padding-top: 21px; 
 }
 
 .menu-ancres-liste a:hover {
     color: var(--main-color);
-    border-top: 3px solid var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
 
 /**Titre h1 et base-line**/
@@ -182,8 +188,7 @@ a {
 
 .commentaire-header {
     display: block;
-    margin-top: 10px;
-       
+    margin-top: 10px;   
 }
 
 /**Barre de localisation**/
@@ -300,7 +305,7 @@ a {
 }
 
 .btn-filtre:hover {
-    background-color: var(--filter-bg-color);
+    background-color: var(--btn-filter-bg-color);
     cursor: pointer;
 }
 
@@ -669,7 +674,7 @@ a {
                             }
 
 /*##########################################################################*/  
-@media (max-width: 767.98px) {/* Small devices (phones, less than 768px)*/
+@media (max-width: 768px) {/* Small devices (phones, less than 768px)*/
 /*##########################################################################*/  
   
 /*************************** RESPONSIVE: Header *****************************/
@@ -694,7 +699,8 @@ a {
                                 justify-content: center;
                                 align-items : center;
                                 padding-top: 30px;
-                                padding-bottom: 30px;
+                                
+                                margin-bottom: 50px;
                             }
                             
                             /*REPONSIVE: Ancres*/
@@ -703,41 +709,41 @@ a {
                                 display: flex;
                                 flex-direction: row;
                                 justify-content: center;
-                                margin-bottom: 30px;
-                                padding-left: 0px;
+                                padding-inline-start: 0px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
                                 width: 100%;
+                                gap: 0px;
+                                margin-top: 0px;
                             }
 
-                            .menu-ancres-liste a:hover {/*couleur transparente)*/
-                                border-top: 3px solid #ffffff00;
+                            .menu-ancres-liste {
+                                display: block;/**/
+                                box-sizing: border-box;/**/
+                                text-align: center;/**/
+                                height: 60px;/** avant c'était 100% **/
+                                width: 100%;
+                                justify-content: center;
+                                align-content: center;                              
                             }
 
-                                                    /*test soulignement*/
-                                                    .bandeau {
-                                                        margin-bottom: 20px;
+                            .menu-ancres-liste a {
+                                margin-top: 0px;
+                                padding-bottom: 20px;                   
+                            }
+                        
+                            .menu-ancres-liste a:hover {/*couleur transparente)*/                              
+                                border-top: 3px solid #ffffff00;    
+                            }
 
-                                                    }
-                                                    .hover {
-                                                        display: flex;
-                                                        flex-direction: flex-start;   
-                                                    }
+                            .menu-ancres-liste:hover {
+                                border-top: 2px solid rgba(255, 255, 255, 0);
+                                border-bottom: 2px solid var(--main-color);
+                            }
 
-                                                    .hover1 {
-                                                        width: 50%;
-                                                        border: 2px solid var(--border-btn);
-                                                    }
-                                                    .hover2 {
-                                                        width: 50%;
-                                                        border: 2px solid var(--border-btn);
-                                                    }
+                            /*Responsive Titre site web et base line*/
 
-                                                    a[href="#hebergements"]:hover > .hover1 {
-                                                        border: 2px solid green;
-                                                    }
-
-                                                    a[href="#activites"]:hover ~ .hover2 {
-                                                        border: 2px solid green;
-                                                    }
+                            .titre-header {
+                                margin-top: 50px;
+                            }
 
                             /*RESPONSIVE :Barre de localisation*/
 
@@ -767,11 +773,7 @@ a {
                                 width: 49px;
                                 height: 49px;
                                 margin-left: -15px;
-                                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.250));
-                            }
-
-                            input #btn-rechercher2 {
-                                
+                                filter:var(--shadow-loupe);
                             }
 
                             /*RESPONSIVE :Barre des filtres*/
@@ -816,12 +818,6 @@ a {
                             .hebergements-cards .card {
                                 width: calc(100% - 0px);
                             }
-
-
-
-
-
-
 
                             /*RESPONSIVE: Populaires*/
 
