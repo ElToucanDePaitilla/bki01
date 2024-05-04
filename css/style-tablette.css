@@ -9,6 +9,7 @@
     display:flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 0px;
 }
 
 .titre-filtre {
@@ -42,10 +43,25 @@
     width: 100%;
 }
 
+.hebergements h2 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.hebergements-cards {
+    padding-bottom: 0px;  
+}
+
+
 /*RESPONSIVE: Section populaires*/
 
 .populaires {
     width: 100%;
+}
+
+.populaires h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .populaires-cards {
@@ -53,7 +69,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-right: 10px;
-    padding-right: 30px;  
+    padding-right: 30px;
 }
 
 .populaires-cards a {
@@ -67,7 +83,7 @@
 /*RESPONSIVE: Section activités*/
 
 .activites-cards .card {
-    height:  270px;  
+    height:  270px; 
 }
 
 .activites-cards img { 
