@@ -26,7 +26,7 @@ body {
     --btn-filter-bg-color: #DEEBFF;/*Couleur du fond des boutons filtres*/
     --border-btn: #D9D9D9;
     --card-bg-color: #ffffff;
-    --shadow-card: drop-shadow(0px 3px 15px rgba(0, 26, 255, 0.5));
+    --shadow-card: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     --shadow-loupe:  drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.250));;
 
 
@@ -120,7 +120,6 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: var(--shadow-card);
-
 }
 
 .card img {
@@ -351,19 +350,21 @@ a {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 25px;
-    padding-left: 30px;/**bordure gauche dans les containers gris**/
-    padding-right: 30px;/**bordure gauche dans les containers gris**/
 }
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%; 
+    width: 65%;
 }
 
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     overflow: hidden; /* Pour gérer le dépassement de contenu */
     word-wrap: break-word;/*Coupe les mots pour éviter qu'ils ne sortent par le côté droit de la carte."*/
 }
@@ -377,11 +378,10 @@ a {
     border-radius: 24px;
 }
 
+
 .hebergements h2 {
-    padding-top: 7px;
-    padding-bottom: 7px;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-left: 25px;
+    margin-top: 30px; 
 }
 
 .hebergements a {
@@ -423,14 +423,23 @@ a {
 
 #afficher {
     display: inline-block;
-    padding-top: 0px;
-    padding-bottom: 30px;
+    padding: 0px 0px 30px 30px ;
+    
+    
 }
 
 /****** Populaires: début ***********/
 
 .populaires {
     width: 32%;
+}
+
+
+.populaires-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 40px;   
 }
 
 .populaires h2 {
@@ -443,14 +452,20 @@ a {
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .populaires-cards .card {
     display: flex;
+    height: 146px;
+    height: auto;/*ajouté*/
     margin-top: 0px;
     margin-bottom: 30px;
+
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
+    width: 100%;
 }
 
 .populaires-cards img {

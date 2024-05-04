@@ -32,36 +32,32 @@
 
 .hebergements-and-populaires {
     flex-direction: column;
-    margin-right: 60px;
 }
 
 .hebergements-and-populaires section {
     flex-direction: column;
-    margin-top: px;
 }
 
 .hebergements {
     width: 100%;
 }
 
+/*RESPONSIVE: Section populaires*/
+
 .populaires {
     width: 100%;
 }
-
-/*RESPONSIVE: Section populaires*/
 
 .populaires-cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-right: 10px;
+    padding-right: 30px;  
 }
 
 .populaires-cards a {
-    width: 30%;
-}
-
-.populaires-cards .card-title {
-    font-size: 14px;
+    width: calc(33% - 15px) ;
 }
 
 .populaires-cards .card-subtitle {
