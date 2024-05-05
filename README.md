@@ -1,18 +1,9 @@
 Créez la page d'accueil d'une agence de voyage avec HTML & CSS
 
-
 A terminer:
-- Desktop :
-    - bug carte pop lors diminution largeur
-    - vérifier alignement Afficher plus
-- tablette :
-    - vérifier alignement afficher plus
-    - bas carte pop bas alignement cards
-    - bas carte activités sortie texte cards
-- Mobile:
-    - vérifier les row-gap des cards
 
-- Général :
-    - regrouper les codes
-    - validation codes HTML et CSS
+- tablette:
+  - cartes pop contrôler largeur cartes et flow bottom sortant des cartes
+  - cartes heb : contrôler flow bottom sortant des cartes
 
+Général: - vérifier les alignements et les gap - simplifier et regrouper les codes - tester sous Firefox - validation codes HTML et CSS

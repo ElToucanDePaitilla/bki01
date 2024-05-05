@@ -145,8 +145,8 @@
 }
 
 .btn-filtre i {
-font-size: 20px;
-margin-left: -2px;
+    font-size: 20px;
+    margin-left: -2px;
 }
 
 .info {
@@ -201,13 +201,18 @@ margin-left: -2px;
 
 .populaires-cards {
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 0 30px 0;
     row-gap: 15px;
+    width: 100%;
+}
+
+.populaires-cards .card {
+    padding: 5px;
+    margin: 0 20px 0 20px;;
 }
 
 .populaires-cards a {
-    width: 98%;
+    width: 100%;
 }
 
 section.populaires {

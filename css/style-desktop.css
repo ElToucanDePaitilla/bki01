@@ -449,9 +449,10 @@ a {
 
 .populaires-cards {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    padding-left: 30px;
-    padding-right: 40px;   
+    width: 100%;
+    row-gap: 30px;   
 }
 
 .populaires h2 {
@@ -471,18 +472,17 @@ a {
 .populaires-cards .card {
     display: flex;
     height: 146px;
-    height: auto;/*ajouté*/
     margin-top: 0px;
-    margin-bottom: 30px;
-
+    margin-left: 30px;
+    margin-right: 30px;
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
-    width: 100%;
+    
 }
 
-.populaires-cards img {
+.populaires-cards .card img {
     width: 33%;
-    height: 136px;
+    max-width: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
