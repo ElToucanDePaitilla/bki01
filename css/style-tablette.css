@@ -60,32 +60,36 @@
 }
 
 .populaires-cards {
-    display: flex;
+    width: auto;
     flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    column-gap: 20px; 
+}
+
+.populaires-cards a { 
+    width: calc(33% - 0px);
 }
 
 .populaires-cards .card {
-    margin-bottom: 30px;    
+    min-height: 146px; 
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;  
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
 }
 
+.populaires-cards .card-subtitle {
+    font-size: 13px;
+}
 
 .populaires h2 {
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-
-
-
-.populaires-cards a {
-    width: calc(33% - 15px) ;
-}
-
-.populaires-cards .card-subtitle {
-    font-size: 13px;
-}
 
 /*RESPONSIVE: Section activités*/
 
