@@ -30,8 +30,6 @@ body {
     --shadow-loupe:  drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.250));;
 
 
-
-    box-sizing: border-box;
 }
 
 /**************** Couleurs du sites: fin *****************/
@@ -196,20 +194,22 @@ a {
 .barre-localisation {
     display:flex;
     justify-content: flex-start;
-    margin-top: px;
+    margin-top: 0px;
     margin-bottom: 0px;
     height: 60px;
 }
 
 #container-icone-maps {
-    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    flex-grow: 0;
     height: 49px;
     border: 1px;
     border-radius: 15px 0px 0px 15px;
     background-color: var(--main-bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 #container-icone-maps i {
@@ -217,7 +217,6 @@ a {
 }
 
 .champs-rechercher {
-    width: 195px;
     height: 45px;
     border: 1px solid var(--main-bg-color); 
     border-radius: 0px 0px 0px 0px;
@@ -336,7 +335,7 @@ a {
     margin-right: 10px;
 }
 
-/*Texte d'information situé aprèes l'icône "i"*/
+/*Texte d'information situé après l'icône "i"*/
 
 .info { 
     display:flex;
@@ -376,9 +375,6 @@ a {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-    padding-bottom: 20px;
-    overflow: hidden; /* Pour gérer le dépassement de contenu */
-    word-wrap: break-word;/*Coupe les mots pour éviter qu'ils ne sortent par le côté droit de la carte."*/
 }
 
 .hebergements-cards .card {  
@@ -435,7 +431,7 @@ a {
 
 #afficher {
     display: inline-block;
-    padding: 0px 0px 30px 30px ;
+    padding: 0px 0px 30px 30px;
     
     
 }
@@ -446,11 +442,9 @@ a {
     width: 32%;
 }
 
-
 .populaires-cards {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-direction: column; 
     row-gap: 30px;   
 }
 
@@ -543,21 +537,32 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.activites-cards a {
+    display: flex;
+    align-items: stretch;
+    min-width: 20%;
+    width: calc(25% - 30px);
+
+}
+
+.activites-cards article {
+    display: flex;
+    align-items: stretch;
     width: 100%;
 }
 
-.activites-cards .card { 
+.activites-cards a .card { 
     display: flex;
-    flex-direction: column; 
-    height: 439px;
-    width: calc(25% - 30px);
+    flex-direction: column;
+    min-height: 439px;    
     border-radius: 24px;
     padding: 0px;
 } 
 
 .activites-cards img { 
     height: 380px;
-    min-height: 380px;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -566,8 +571,11 @@ a {
 .activites-cards .card-title {
     margin-left: 20px;
     margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: auto;
     margin-bottom: auto;
+    height : auto;
 }
 
 /****** Activités Marseille: fin ************/
