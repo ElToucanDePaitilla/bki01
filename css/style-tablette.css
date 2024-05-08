@@ -43,16 +43,14 @@
         width: 100%;
     }
     
-    .hebergements h2 {
-        margin-top: 25px;
-        margin-bottom: 5px;
-    }
-    
     .hebergements-cards {
         padding-bottom: 0px;  
     }
     
-    
+    .hebergements nav {
+    }
+
+
     /*RESPONSIVE: Section populaires*/
     
     .populaires {

@@ -1,8 +1,7 @@
 @media (max-width: 768px) {/* Small devices (phones, less than 768px)*/ 
       
     /*************************** RESPONSIVE: Header *****************************/
-        
-                                    
+                                        
     /*RESPONSIVE: main*/
     
     .main-container {
@@ -109,7 +108,6 @@
     
     /*RESPONSIVE :Barre des filtres*/
     
-    
     .titre-filtre {
         margin-left: 20px;
         margin-top: 0px;
@@ -151,7 +149,7 @@
     }
     
     .icone-info {
-       
+        
         min-width: 24px;
     }
     
@@ -169,19 +167,20 @@
         flex-direction: column-reverse;
     }
     
-    /*RESPONSIVE: Hébergements*/
-    
     .hebergements-and-populaires .hebergements {
-        background-color:#ffffff;    
-        }
+    background-color:#ffffff;    
+    }
+    
+    /*RESPONSIVE: Hébergements*/
     
     .hebergements-cards {
         flex-direction: column;
         align-content: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 0px;
         row-gap: 15px;
+    }
+    
+    .hebergements-cards a {
+        width: 100%;
     }
     
     .hebergements-cards a:last-of-type {
@@ -189,15 +188,19 @@
     }
     
     .hebergements-cards .card {
-        width: calc(98% - 0px);
+        margin-bottom: 0px;
     }
     
-    #afficher {
-        padding-left: 0px;
+    .hebergements-cards nav {
+        display: flex;
        
-        margin-left: 20px;
+        height: 100%;
+        min-height: calc(21.118px + 60px);
     }
     
+    .afficher-plus {
+        padding-bottom: 30px;
+    }
     
     /*RESPONSIVE: Populaires*/
     
@@ -209,8 +212,7 @@
     }
     
     .populaires-cards .card {
-        padding: 5px;
-        margin: 0 20px 0 20px;;
+        margin: 0 20px 0 20px;
     }
     
     .populaires-cards a {
@@ -225,12 +227,8 @@
     
     /**activites**/
     
-    .activites {
-    }
-    
     .activites h2 {
-        margin-top: 30px;
-        margin-bottom : 30px;
+       padding-left: 15px;
     }
     
     /* activites-cards */
@@ -239,19 +237,18 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 15px;
+        row-gap: 15px;
     }
     
     .activites-cards a {
         display: flex;
         align-items: stretch;
-        width: 100%;
+        width: 100%;    
     }
     
     .activites-cards article {
         width: 100%;
     }
-    
     
     .activites-cards a .card { 
         display: flex;
