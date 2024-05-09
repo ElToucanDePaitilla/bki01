@@ -87,28 +87,19 @@ body {
 
 .barre-de-recherche {
     display:flex;
-    flex-shrink: 1;
     justify-content: center;
-    margin-bottom: 0px;
-    width: auto;
+    margin-bottom: 0px; 
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.container-icone-maps {
-    
-}
-
-.formulaire-de-recherche {
-    
-}
-
 .champs-rechercher {
-    display: flex;
     padding-right: 15px;
     text-align: center;
-    max-width: 100%;
-    width: 230px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 230px;
+    height: 49px;
 }
 
 #btn-rechercher1 { /* En mode mobile, rend invisible le bouton 1*/   
@@ -127,12 +118,6 @@ body {
     margin-left: -15px;
     filter:var(--shadow-loupe);
 }
-
-.container-icone-maps {
-    
-}
-
-
 
 /*RESPONSIVE :Barre des filtres*/
 
@@ -154,7 +139,6 @@ body {
     height: 50px;
     width: 100%;
     row-gap: 20px;
-    
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 50px;

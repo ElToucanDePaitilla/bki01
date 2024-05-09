@@ -13,6 +13,7 @@ body {
 
 .main-container {
     width: 100%;
+    /**min-width: 320px;**/
     max-width: 1440px;
     padding: 0 50px;
 }
@@ -196,15 +197,14 @@ a {
 .barre-de-recherche {
     display:flex;
     justify-content: flex-start;
-    height: 60px;
+    height: 50px;
 }
 
 #container-icone-maps {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 30px;
-    width: 50px;
+    min-width: 50px;
     height: 49px;
     border: 1px;
     border-radius: 15px 0px 0px 15px;
