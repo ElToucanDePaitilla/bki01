@@ -191,13 +191,11 @@ a {
     margin-top: 10px;   
 }
 
-/**Barre de localisation**/
+/**Barre de recherche**/
 
-.barre-localisation {
+.barre-de-recherche {
     display:flex;
     justify-content: flex-start;
-    margin-top: 0px;
-    margin-bottom: 0px;
     height: 60px;
 }
 
@@ -205,8 +203,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 50px;
-    flex-grow: 0;
+    min-width: 30px;
+    width: 50px;
     height: 49px;
     border: 1px;
     border-radius: 15px 0px 0px 15px;
@@ -228,7 +226,7 @@ a {
     color: #000000;
 }
 
-#formulaire-localisation {
+#formulaire-de-recherche {
     display: flex; 
     }
 
@@ -291,6 +289,7 @@ a {
 .barre {
     display: flex;
     flex-direction: row;
+    flex-wrap:nowrap;
     height: 50px;
 }
 
@@ -310,7 +309,7 @@ a {
 
 .btn-filtre:hover {
     background-color: var(--btn-filter-bg-color);
-    cursor: pointer;
+    cursor: default;
 }
 
 .btn-filtre h4 {

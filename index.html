@@ -13,67 +13,66 @@
     <link rel="stylesheet" href="./css/style-desktop.css">
     <link rel="stylesheet" href="./css/style-tablette.css">
     <link rel="stylesheet" href="./css/style-mobile.css">
-
 </head>
 <body>
     <div class="main-container">
 <!--## HEADER: Début ############################################################################################-->
         <header >
             <nav class="bandeau">
-                <div class="centrage-logo"><!--logo-->
+                <div class="centrage-logo"><!--logo du site Booki-->
                     <img src="./images/logo/Booki.png" alt="Logo Booki du site" class="logo-header">
                 </div>  
-                <ul class="menu-ancres"><!--bouton hébergements + bouton activités-->        
+                <ul class="menu-ancres"><!--Menu vers les sections Hébergements et Activités-->        
                     <li class="menu-ancres-liste">
-                        <a href="#heb" target="_self">Hébergements</a>
+                        <a href="#heb" target="_self">Hébergements</a><!--Lien vers l'ancre id Hébergements-->
                     </li>                    
                     <li class="menu-ancres-liste">
-                        <a href="#act" target="_self">Activités</a>
+                        <a href="#act" target="_self">Activités</a><!--Lien vers l'ancre id Activités-->
                     </li>                    
                 </ul>         
             </nav>
             <div><!--titre et commentaire-->
-                <h1 class="titre-header">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <h6 class="commentaire-header">En plein centre-ville ou en pleine nature</h6>                 
+                <h1 class="titre-header">Trouvez votre hébergement pour des vacances de rêve</h1><!--Titre du site-->
+                <h6 class="commentaire-header">En plein centre-ville ou en pleine nature</h6><!--Commentaire sous le titre-->                 
             </div>             
-            <div class="barre-localisation"><!--barre de localisation-->
+            <div class="barre-de-recherche"><!--barre de recherche-->
                 <div id="container-icone-maps" >
-                    <i class="fa-solid fa-location-dot fa-xl" style="color: #000000;"></i>
+                    <i class="fa-solid fa-location-dot fa-xl" style="color: #000000;"></i><!--Icone de la barre de recherche-->
                 </div>    
-                <form action="#" method="get" id="formulaire-localisation">
+                <form action="#" method="get" id="formulaire-de-recherche">
                     <label for="search"></label>
-                    <input type="text" id="search" name="search" placeholder="Marseille, France" class="champs-rechercher">
-                    <input type="submit" id="btn-rechercher1" value="Rechercher" >
-                    <input type="submit" id="btn-rechercher2"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i><!--Bouton invisible en mode desktop-->
+                    <input type="text" id="search" name="search" placeholder="Marseille, France" class="champs-rechercher"><!--Remplissage du champs de recherche-->
+                    <input type="submit" id="btn-rechercher1" value="Rechercher" ><!--Libellé du bouton de recherche-->
+                    <input type="submit" id="btn-rechercher2"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i><!--Bouton rendu invisible en mode desktop, qui n'apparaitra qu'en mode mobile-->
                 </form>       
             </div>
             <div class="rubrique-filtres"><!--Barre des filtres-->
                 <div class="titre-et-barre">    
                     <div class="titre-filtre">
-                        <h3>Filtres</h3>
+                        <h3>Filtres</h3><!--Libellé de la barre des filtres-->
                     </div>
-                    <div class="barre">
-                        <div class="btn-filtre">
+                    <div class="barre"><!--Barre contenant tous les boutons des filtres-->
+                        <div class="btn-filtre"><!--Bouton 1-->
                             <i class="fa-solid fa-money-bill-wave fa-lg"></i>
-                            <h4>Écono&shy;mique</h4>
+                            <h4>Écono&shy;mique</h4><!--Soft hyphen-->
                         </div>
-                        <div class="btn-filtre">
+                        <div class="btn-filtre"><!--Bouton 2-->
                             <i class="fa-solid fa-person fa-xl"></i>
-                            <h4>Familial</h4>
+                            <h4>Familial</h4><!--Soft hyphen-->
                         </div>
-                        <div class="btn-filtre">
+                        <div class="btn-filtre"><!--Bouton 3-->
                             <i class="fa-solid fa-heart fa-lg"></i>
-                            <h4>Romantique</h4>
+                            <h4>Roman&shy;tique</h4><!--Soft hyphen-->
                         </div>
-                        <div class="btn-filtre">
+                        <div class="btn-filtre"><!--Bouton 4-->
                             <i class="fa-solid fa-fire fa-lg"></i>
-                            <h4>Nos&shy; pépites</h4>
+                            <h4>Nos pépites</h4><!--Soft hyphen-->
                         </div>
                     </div>
                 </div>
-                <div class="info"><!--information "Plus de 500 logements sont disponibles dans cette ville"-->
+                <div class="info"><!--Icone "i" et information "Plus de 500 logements sont disponibles dans cette ville"-->
                     <div class="icone-info">
-                        <i class="fa-solid fa-info fa-xs"></i>
+                        <i class="fa-solid fa-info fa-xs"></i><!--Icone placée devant le texte-->
                     </div>
                     <div>
                         <h6>Plus de 500 logements sont disponibles dans cette ville</h6>
@@ -336,6 +335,6 @@
         </nav>         
     </footer>
 <!--## FOOTER: fin ########################################################################################-->
-    </div><!--Ceci est la balise fermante de '<div class="main-container">', laquelle contient toute la page web.-->   
+    </div><!--Ceci est la balise fermante de '<div class="main-container">', laquelle contient tout le contenu affiché de la page web.-->   
 </body>
 </html>
