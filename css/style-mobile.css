@@ -37,21 +37,21 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-inline-start: 0px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    padding-inline-start: 0px;/*!!!!!!!!!!!!!!!!!!*/
     width: 100%;
     gap: 0px;
     margin-top: 0px;
 }
 
 .menu-ancres-liste {
-    display: block;/**/
-    box-sizing: border-box;/**/
-    text-align: center;/**/
-    height: 60px;/** avant c'était 100% **/
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    height: 60px;
     width: 100%;
     justify-content: center;
     align-content: center;
-    border-bottom: 2px solid var(--border-btn); 
+    border-bottom: 2px solid var(--couleur-bordure-bouton); 
 }
 
 .menu-ancres-liste a {
@@ -60,12 +60,12 @@ body {
 }
 
 .menu-ancres-liste a:hover {/*couleur transparente)*/                              
-    border-top: 0px solid var(--main-color);    
+    border-top: 0px solid var(--couleur-principale);    
 }
 
 .menu-ancres-liste:hover {
     border-top: 2px solid rgba(0, 0, 0, 0);
-    border-bottom: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--couleur-principale);
 }
 
 /*RESPONSIVE : Titre site web et base line*/
@@ -109,12 +109,12 @@ body {
     flex-grow: 0;
     justify-content: center;
     align-items: center;
-    background-color: var(--main-color);    
+    background-color: var(--couleur-principale);    
     border-radius: 15px;
     min-width: 49px;
     height: 49px;
     margin-left: -15px;
-    filter:var(--shadow-loupe);
+    filter:var(--ombre-loupe);
 }
 
 /*RESPONSIVE :Barre des filtres*/
