@@ -9,15 +9,13 @@
         display:flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+  
+    .titre-filtre h3 {
         margin-top: 0px;
+        margin-bottom: 14px;
     }
-    
-    .titre-filtre {
-        display: flex;
-        align-items: center;
-        margin-right: 15px;
-    }
-    
+
     .barre {
         display: flex;
         flex-direction: row;

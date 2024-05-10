@@ -144,7 +144,7 @@ body {
 .btn-filtre {
     display: flex;
     height: 40px;
-    width: calc(41% - 10px);
+    width: calc(40% - 15px);
     max-width: 370px;
     margin-left: 0px;
     margin-right: 0px;
