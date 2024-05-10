@@ -1,7 +1,6 @@
 @media (max-width: 768px) {/* Small devices (phones, less than 768px)*/ 
       
-    /*************************** RESPONSIVE: Header *****************************/
-
+/*************************** RESPONSIVE: Header *****************************/
 
 /*RESPONSIVE: Marges de la page web*/
 
@@ -182,11 +181,11 @@ body {
 
 /*RESPONSIVE: hébergements et populaires*/
 
-.hebergements-and-populaires {
+.hebergements-et-populaires {
     flex-direction: column-reverse;
 }
 
-.hebergements-and-populaires .hebergements {
+.hebergements-et-populaires .hebergements {
 background-color:#ffffff;    
 }
 

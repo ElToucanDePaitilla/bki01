@@ -31,11 +31,11 @@
     
     /*RESPONSIVE: Section hébergements*/
     
-    .hebergements-and-populaires {
+    .hebergements-et-populaires {
         flex-direction: column;
     }
     
-    .hebergements-and-populaires section {
+    .hebergements-et-populaires section {
         flex-direction: column;
     }
     

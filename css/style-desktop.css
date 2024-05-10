@@ -348,14 +348,14 @@ a {
 /*############################# HEADER: fin ###############################*/
 /*############################# MAIN: début ###############################*/
 
-/****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+/****** Hebergements et Populaires ***********/
+.hebergements-et-populaires {
     display: flex;
     justify-content: space-between; /**commande espace entre les deux containers gris "Hébergements" et "Populaires";**/
     gap: 50px;
 }
 
-.hebergements-and-populaires section {
+.hebergements-et-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 25px;
 }
