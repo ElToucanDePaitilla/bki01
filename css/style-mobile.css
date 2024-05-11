@@ -22,7 +22,7 @@ body {
     flex-direction: column;
 }
 
-.centrage-logo { 
+.logo { 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -105,17 +105,8 @@ h1 + p {
     display: none;
 }
 
-.fa-solid.fa-magnifying-glass {/*Icone loupe sur fond bleu*/
+#btn-rechercher2 { /* En mode mobile, rend invisible le bouton 1*/   
     display: flex;
-    flex-grow: 0;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--couleur-principale);    
-    border-radius: 15px;
-    min-width: 49px;
-    height: 49px;
-    margin-left: -15px;
-    filter:var(--ombre-loupe);
 }
 
 /*RESPONSIVE :Barre des filtres*/

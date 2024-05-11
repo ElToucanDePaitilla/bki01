@@ -18,14 +18,14 @@
     <div class="main-container">
 <!--## HEADER: Début ############################################################################################-->
         <header><!--Container comprenant:
-                            - le bandeau (logo du site et nav vers les ancres du site),
-                            - le titre du site et son commentaire,
-                            - la barre de recherche,
-                            - la barre de filtre,
-                            - le texte d'information et son icône.-->
+                    - le bandeau (logo du site et nav vers les ancres du site),
+                    - le titre du site et son commentaire,
+                    - la barre de recherche,
+                    - la barre de filtre,
+                    - le texte d'information et son icône.-->
             <div class="logo-et-menu-principal"><!--Container comprenant le logo du site et la barre de navigation vers les ancres du site-->
-                <div class="centrage-logo"><!--Logo du site Booki-->
-                    <img src="./images/logo/Booki.png" alt="Logo Booki du site" class="logo-header">
+                <div class="logo"><!--Logo du site Booki-->
+                    <img src="./images/logo/Booki.png" alt="Logo Booki du site">
                 </div>
                 <nav class="menu-ancres">  
                     <ul ><!--Menu vers les ancres des sections Hébergements et Activités-->        
@@ -43,14 +43,14 @@
                 <p>En plein centre-ville ou en pleine nature</p><!--Commentaire sous le titre-->                 
             </div>             
             <div class="barre-de-recherche"><!--barre de recherche-->
-                <div id="container-icone-maps" >
+                <div id="container-icone-maps" ><!--Container entourant l'icône "Maps".-->
                     <i class="fa-solid fa-location-dot fa-xl" style="color: #000000;"></i><!--Icône de la barre de recherche-->
                 </div>    
                 <form action="#" method="get" id="formulaire-de-recherche"><!--Formulaire de recherche-->
                     <label for="search"></label><!--Ici aucun label-->
                     <input type="text" id="search" name="search" placeholder="Marseille, France" class="champs-rechercher"><!--Remplissage du champs de recherche-->
-                    <input type="submit" id="btn-rechercher1" value="Rechercher" ><!--Libellé du bouton de recherche-->
-                    <input type="submit" id="btn-rechercher2"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i><!--Bouton rendu invisible en mode desktop, qui n'apparaitra qu'en mode mobile-->
+                    <button type="submit" id="btn-rechercher1">Rechercher</button><!--Libellé du bouton de recherche-->
+                    <button type="submit" id="btn-rechercher2"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i></button><!--Bouton rendu invisible en mode desktop, qui n'apparaitra qu'en mode mobile-->
                 </form>       
             </div>
             <div class="rubrique-filtres"><!--Barre des filtres-->

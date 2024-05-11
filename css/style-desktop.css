@@ -133,7 +133,7 @@ a {
     justify-content: space-between;
 }
 
-.logo-header {
+.logo img {
     height: 19px;
 }
 
@@ -232,6 +232,9 @@ a {
 }
 
 #btn-rechercher2 { /* bouton visible uniquement en mode mobile*/
+    display: none;
+    justify-content: center;
+    align-items: center;
     font-size: 18px;
     font-weight: 700;
     color:#ffffff;
@@ -240,10 +243,21 @@ a {
     border: 1px;
     border-radius: 15px 15px 15px 15px;
     background-color: var(--couleur-principale);
+    
+    
+}
+
+.fa-magnifying-glass {/*Icone loupe sur fond bleu*/
     display: flex;
+    flex-grow: 0;
     justify-content: center;
     align-items: center;
-    display: none;
+    background-color: var(--couleur-principale);    
+    border-radius: 15px;
+    min-width: 49px;
+    height: 49px;
+    margin-left: -15px;
+    filter:var(--ombre-loupe);
 }
 
 /**Barre des filtres**/
