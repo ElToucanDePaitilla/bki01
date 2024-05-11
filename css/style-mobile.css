@@ -15,9 +15,9 @@ body {
     padding: 0px 0px;
 }
 
-/*REPONSIVE: Bandeau*/
+/*REPONSIVE: logo-nav*/
 
-.bandeau {
+.logo-et-menu-principal {
     display:flex;
     flex-direction: column;
 }
@@ -41,6 +41,7 @@ body {
     width: 100%;
     gap: 0px;
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .menu-ancres-liste {
@@ -76,7 +77,7 @@ body {
     margin-right: 20px;
 }
 
-.commentaire-header {
+h1 + p {
     margin-left: 20px;
     margin-right: 20px;
 }

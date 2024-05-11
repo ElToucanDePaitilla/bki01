@@ -23,22 +23,24 @@
                             - la barre de recherche,
                             - la barre de filtre,
                             - le texte d'information et son icône.-->
-            <nav class="bandeau"><!--Container comprenant le logo du site et la barre de navigation vers les ancres du site-->
+            <div class="logo-et-menu-principal"><!--Container comprenant le logo du site et la barre de navigation vers les ancres du site-->
                 <div class="centrage-logo"><!--Logo du site Booki-->
                     <img src="./images/logo/Booki.png" alt="Logo Booki du site" class="logo-header">
-                </div>  
-                <ul class="menu-ancres"><!--Menu vers les ancres des sections Hébergements et Activités-->        
-                    <li class="menu-ancres-liste">
-                        <a href="#heb" target="_self">Hébergements</a><!--Lien vers l'ancre id Hébergements-->
-                    </li>                    
-                    <li class="menu-ancres-liste">
-                        <a href="#act" target="_self">Activités</a><!--Lien vers l'ancre id Activités-->
-                    </li>                    
-                </ul>         
-            </nav>
+                </div>
+                <nav>  
+                    <ul class="menu-ancres"><!--Menu vers les ancres des sections Hébergements et Activités-->        
+                        <li class="menu-ancres-liste">
+                            <a href="#heb" target="_self">Hébergements</a><!--Lien vers l'ancre id Hébergements-->
+                        </li>                    
+                        <li class="menu-ancres-liste">
+                            <a href="#act" target="_self">Activités</a><!--Lien vers l'ancre id Activités-->
+                        </li>                    
+                    </ul>
+                </nav>                
+            </div>
             <div><!--Titre du site et commentaire-->
                 <h1 class="titre-header">Trouvez votre hébergement pour des vacances de rêve</h1><!--Titre du site-->
-                <h6 class="commentaire-header">En plein centre-ville ou en pleine nature</h6><!--Commentaire sous le titre-->                 
+                <p>En plein centre-ville ou en pleine nature</p><!--Commentaire sous le titre-->                 
             </div>             
             <div class="barre-de-recherche"><!--barre de recherche-->
                 <div id="container-icone-maps" >
@@ -57,22 +59,22 @@
                         <h3>Filtres</h3><!--Libellé de la barre des filtres-->
                     </div>
                     <div class="barre"><!--Barre contenant tous les boutons des filtres-->
-                        <div class="btn-filtre"><!--Bouton 1-->
+                        <button class="btn-filtre"><!--Bouton 1-->
                             <i class="fa-solid fa-money-bill-wave fa-lg"></i>
-                            <h4>Écono&shy;mique</h4><!--Soft hyphen, pour la césure-->
-                        </div>
-                        <div class="btn-filtre"><!--Bouton 2-->
+                            <span>Écono&shy;mique</span><!--Soft hyphen, pour la césure-->
+                        </button>
+                        <button class="btn-filtre"><!--Bouton 2-->
                             <i class="fa-solid fa-person fa-xl"></i>
-                            <h4>Familial</h4>
-                        </div>
-                        <div class="btn-filtre"><!--Bouton 3-->
+                            <span>Familial</span>
+                        </button>
+                        <button class="btn-filtre"><!--Bouton 3-->
                             <i class="fa-solid fa-heart fa-lg"></i>
-                            <h4>Roman&shy;tique</h4><!--Soft hyphen, pour la césure-->
-                        </div>
-                        <div class="btn-filtre"><!--Bouton 4-->
+                            <span>Roman&shy;tique</span><!--Soft hyphen, pour la césure-->
+                        </button>
+                        <button class="btn-filtre"><!--Bouton 4-->
                             <i class="fa-solid fa-fire fa-lg"></i>
-                            <h4>Nos pépites</h4>
-                        </div>
+                            <span>Nos pépites</span>
+                        </button>
                     </div>
                 </div>
                 <div class="info"><!--Icône "i" et information "Plus de 500 logements sont disponibles dans cette ville"-->
@@ -80,7 +82,7 @@
                         <i class="fa-solid fa-info fa-xs"></i><!--Icone placée devant le texte-->
                     </div>
                     <div>
-                        <h6>Plus de 500 logements sont disponibles dans cette ville</h6><!--Texte d'information-->
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p><!--Texte d'information-->
                     </div>
                 </div>     
             </div>                       
@@ -98,7 +100,7 @@
                                 <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="contenu-carte">
                                     <div class="texte-carte">
-                                        <h5 class="titre-carte">Hôtel du port</h5>
+                                        <h4 class="titre-carte">Hôtel du port</h4>
                                         <p class="sous-titre-carte">Nuit à partir de 128<span class="euro">€</span></p>
                                     </div>
                                     <div class="notation-carte">
@@ -117,7 +119,7 @@
                                 <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="contenu-carte">
                                         <div class="texte-carte">
-                                            <h5 class="titre-carte">Hôtel Chez Amina</h5>
+                                            <h4 class="titre-carte">Hôtel Chez Amina</h4>
                                             <p class="sous-titre-carte">Nuit à partir de 96<span class="euro">€</span></p>
                                         </div>
                                         <div class="notation-carte">
@@ -136,7 +138,7 @@
                                 <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="contenu-carte">
                                     <div class="texte-carte">
-                                        <h5 class="titre-carte">Hôtel Les mouettes</h5>
+                                        <h4 class="titre-carte">Hôtel Les mouettes</h4>
                                         <p class="sous-titre-carte">Nuit à partir de 76<span class="euro">€</span></p>
                                     </div>
                                     <div class="notation-carte">
@@ -155,7 +157,7 @@
                                 <img src="./images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="contenu-carte">
                                     <div class="texte-carte">
-                                        <h5 class="titre-carte">Hôtel de la mer</h5>
+                                        <h4 class="titre-carte">Hôtel de la mer</h4>
                                         <p class="sous-titre-carte">Nuit à partir de 46<span class="euro">€</span></p>
                                     </div>
                                     <div class="notation-carte">
@@ -174,7 +176,7 @@
                                 <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="contenu-carte">
                                     <div class="texte-carte">
-                                        <h5 class="titre-carte">Auberge La Canebière</h5>
+                                        <h4 class="titre-carte">Auberge La Canebière</h4>
                                         <p class="sous-titre-carte">Nuit à partir de 25<span class="euro">€</span></p>
                                     </div>
                                     <div class="notation-carte">
@@ -193,7 +195,7 @@
                                 <img src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="contenu-carte">
                                     <div class="texte-carte">
-                                        <h5 class="titre-carte">Auberge Le Panier</h5>
+                                        <h4 class="titre-carte">Auberge Le Panier</h4>
                                         <p class="sous-titre-carte">Nuit à partir de 23<span class="euro">€</span></p>
                                     </div>
                                     <div class="notation-carte">
@@ -225,7 +227,7 @@
                                 <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="contenu-carte">
                                     <div class="texte-carte">
-                                        <h5 class="titre-carte">Hôtel Le soleil du matin</h5>
+                                        <h4 class="titre-carte">Hôtel Le soleil du matin</h4>
                                         <p class="sous-titre-carte">Nuit à partir de 128<span class="euro">€</span></p>
                                     </div>
                                     <div class="notation-carte">
@@ -244,7 +246,7 @@
                                 <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="contenu-carte">
                                     <div class="texte-carte">
-                                        <h5 class="titre-carte">Chambres d’hôtes Au cœur de l’eau</h5>
+                                        <h4 class="titre-carte">Chambres d’hôtes Au cœur de l’eau</h4>
                                         <p class="sous-titre-carte">Nuit à partir de 71<span class="euro">€</span></p>
                                     </div>
                                     <div class="notation-carte">
@@ -263,7 +265,7 @@
                                 <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="contenu-carte">
                                     <div class="texte-carte">
-                                        <h5 class="titre-carte">Hôtel Bleu et Blanc</h5>
+                                        <h4 class="titre-carte">Hôtel Bleu et Blanc</h4>
                                         <p class="sous-titre-carte">Nuit à partir de 68<span class="euro">€</span></p>
                                     </div>
                                     <div class="notation-carte">
@@ -288,25 +290,25 @@
                     <a href="#"><!--Carte 01-->
                         <article class="carte">
                             <img src="./images/activites/reno-laithienne.jpg" alt="Image montrant un lieu d'activités à Marseille">
-                            <h5 class="titre-carte">Vieux-Port</h5>
+                            <h4 class="titre-carte">Vieux-Port</h4>
                         </article>
                     </a>
                     <a href="#"><!--Carte 02-->
                         <article class="carte">    
                             <img src="./images/activites/paul-hermann.jpg" alt="Image montrant un lieu d'activités à Marseille">
-                            <h5 class="titre-carte">Fort de Pomègues</h5>
+                            <h4 class="titre-carte">Fort de Pomègues</h4>
                         </article>       
                     </a>                                  
                     <a href="#"><!--Carte 03-->
                         <article class="carte">
                             <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image montrant un lieu d'activités à Marseille">
-                            <h5 class="titre-carte">Parc national des Calanques</h5>
+                            <h4 class="titre-carte">Parc national des Calanques</h4>
                         </article>    
                     </a>
                     <a href="#"><!--Carte 04-->
                         <article class="carte">
                             <img src="./images/activites/florian-wehde.jpg" alt="Image montrant un lieu d'activités à Marseille">
-                            <h5 class="titre-carte">Notre-Dame-de-la-Garde</h5>
+                            <h4 class="titre-carte">Notre-Dame-de-la-Garde</h4>
                         </article>   
                     </a>
                 </div> 
@@ -328,7 +330,7 @@
             <ul>
                 <li><h3>Nos hébergements</h3></li><!--Rubrique 2-->
                 <li><a href="#">Charte qualité</a></li>
-                <li><a href="#">proposer votre hôtel</a></li>
+                <li><a href="#">Proposer votre hôtel</a></li>
             </ul>
         </nav>                
         <nav>

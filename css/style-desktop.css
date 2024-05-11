@@ -4,6 +4,7 @@
 
 * {
     font-family: 'Raleway', sans-serif;
+    color: #000000;
 }
 
 body {
@@ -13,7 +14,6 @@ body {
 
 .main-container {
     width: 100%;
-    /**min-width: 320px;**/
     max-width: 1440px;
     padding: 0 50px;
 }
@@ -24,19 +24,16 @@ body {
 :root {
     --couleur-principale: #0065FC;
     --couleur-bg-principale: #F2F2F2;
-    --couleur-bg-bouton-filtre: #DEEBFF;/*Couleur du fond des boutons filtres*/
+    --couleur-bg-bouton-filtre: #DEEBFF;/*Couleur du fond des boutons filtres lors du survol*/
     --couleur-bordure-bouton: #D9D9D9;
     --couleur-bg-carte: #ffffff;
     --ombre-carte: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    --ombre-loupe:  drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.250));;
+    --ombre-loupe: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.250));;
 }
 
 /**************** Couleurs du sites: fin *****************/
-/*****Format général des titres, paragraphes, icones: début ******/
+/*****Titres, paragraphes, icones, liens: début ******/
 
-h1, h2, h3, h4, p {
-    color: #000000;
-}
 
 h1 {/**Titre du site web**/
     font-size: 22px;
@@ -50,28 +47,23 @@ h2 {/**Titres des sections**/
     line-height: 25.83px;
 }
 
-h3 {/**Libellé "Filtres" de la barre des filtres, Titres rubriques du footer**/
+h3 {/**Titre de la barre des filtres, titres des rubriques du footer*//
     font-size: 18px;
     font-weight: 700;
     line-height: 21.13px;
+
 }
 
-h4 {/**Libellés des boutons filtres**/
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 18.78px;
-}
-
-h5 {/**Titre cartes**/
+h4 {/**Titre cartes**/
     font-size: 16px;
     font-weight: 700;
     line-height: 18.78px;  
 }
 
-h6 {/**Titres informatifs : ""En plein centre ..." et "Plus de 500 logements ..." et liens des rubriques du footer**/
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18.78px;   
+.barre h4 {/**Libellés des boutons filtres**/
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18.78px;
 }
 
 p {/**Texte des cartes**/
@@ -80,10 +72,21 @@ p {/**Texte des cartes**/
     line-height: 16.44px;
 }
 
+header p, .menu-ancres a {/**Informations dans le header : ""En plein centre ..." et "Plus de 500 logements ..." **/
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+}
+
 a {
-    color: inherit;
     text-decoration: none;
 }
+
+::placeholder {/**Texte permanant "Marseille, France" figurant dans le champs de recherche de la barre de recherche**/
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+ }    
 
 .fa-solid {
     color: var(--couleur-principale);
@@ -97,9 +100,6 @@ a {
     color: var(--couleur-bg-principale)
 }
 
-/*******Format des titres, paragraphes, icones: fin *******/
-/**********Format spécifique des titres: début ************/
-
 .afficher-plus {
     padding-left: 36px;
     font-size: 18px;
@@ -107,11 +107,7 @@ a {
     line-height: 21.13px;
 }
 
-.footer-rubrique-titre {
-    font-size: 18px;
-}
-
-/**********Format spécifique des titres: fin ************/
+/*****Titres, paragraphes, icones, liens: fin ******/
 /**********Format des cartes: début **********/
 
 .carte {
@@ -130,12 +126,11 @@ a {
 /*############################# GENERAL: fin ###############################*/
 /*############################# HEADER: début ##############################*/
 
-/*bandeau : logo*/
+/*logo-nav*/
 
-.bandeau {
+.logo-et-menu-principal {
     display:flex;
     justify-content: space-between;
-    height: 79px;
 }
 
 .logo-header {
@@ -147,7 +142,7 @@ a {
     align-items : center;
 }
 
-/*bandeau : ancres*/
+/*logo-et-menu-principal : ancres*/
 
 .menu-ancres {
     display: flex;
@@ -180,14 +175,7 @@ a {
 
 .titre-header {
     display: block;
-    color: #000000;
     margin-top: 35px;
-}
-
-.commentaire-header {
-    display: block;
-    margin-top: 0px;
-    margin-bottom: 0px;   
 }
 
 /**Barre de recherche**/
@@ -228,13 +216,6 @@ a {
 #formulaire-de-recherche {
     display: flex; 
     }
-
-::placeholder {
-   font-size: 18px;
-   font-weight: 700;
-   text-align: center;
-   color: #000000;
-}    
 
 #btn-rechercher1 { /* bouton visible uniquement hors mode mobile*/
     font-size: 18px;
@@ -284,10 +265,6 @@ a {
     margin-right: 15px;
 }
 
-.titre-filtre h3 {
-    
-}
-
 .barre {
     display: flex;
     flex-direction: row;
@@ -296,27 +273,27 @@ a {
     column-gap: 15px;
 }
 
+.barre span {
+    margin-left: 5px;
+}
+
 .btn-filtre {
     display: flex;
     align-items: center;
     font-size: 17px;
     font-weight: 700;
     border: 2px solid var(--couleur-bordure-bouton);
+    background-color: white;
     border-radius: 50px;
     padding-top: 4px;
     padding-bottom: 4px;
-    margin-right: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
 .btn-filtre:hover {
     background-color: var(--couleur-bg-bouton-filtre);
     cursor: default;
-}
-
-.btn-filtre h4 {
-    margin-left: 7px;
 }
 
 /**Message d'information : Plus de 500 logements ... dans cette ville**/
@@ -345,7 +322,7 @@ a {
     margin-bottom: 0px;
 }
 
-.info h6 {
+.info p {
     margin-top: 35px;
     margin-bottom: 35px;
 }
@@ -411,7 +388,6 @@ a {
 .hebergements-cartes .carte {    
     display: flex;
     margin-top: 0px;
-    
     min-height: 207.25px;
     height: auto;
     border-radius: 24px;
