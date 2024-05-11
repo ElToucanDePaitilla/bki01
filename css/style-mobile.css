@@ -33,7 +33,7 @@ body {
 
 /*REPONSIVE: Ancres*/
 
-.menu-ancres ul {
+.menu-principal ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -44,7 +44,7 @@ body {
     margin-bottom: 0px;
 }
 
-.menu-ancres-liste {
+.lien-ancre {
     display: block;
     box-sizing: border-box;
     text-align: center;
@@ -55,16 +55,16 @@ body {
     border-bottom: 2px solid var(--couleur-bordure-bouton); 
 }
 
-.menu-ancres-liste a {
+.lien-ancre a {
     margin-top: 0px;
     padding-bottom: 20px;                   
 }
 
-.menu-ancres-liste a:hover {/*couleur transparente)*/                              
+.lien-ancre a:hover {/*couleur transparente)*/                              
     border-top: 0px solid var(--couleur-principale);    
 }
 
-.menu-ancres-liste:hover {
+.lien-ancre:hover {
     border-top: 2px solid rgba(0, 0, 0, 0);
     border-bottom: 2px solid var(--couleur-principale);
 }
@@ -111,7 +111,7 @@ h1 + p {
 
 /*RESPONSIVE :Barre des filtres*/
 
-.titre-filtre {
+.titre-filtres {
     margin-left: 0px;
     margin-top: 0px;
 }
@@ -121,7 +121,7 @@ h1 + p {
     margin-right: 20px;
 }
 
-.barre {
+.barre-filtres {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;

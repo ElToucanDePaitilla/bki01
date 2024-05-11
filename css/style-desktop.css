@@ -72,7 +72,7 @@ p {/**Texte des cartes**/
     line-height: 16.44px;
 }
 
-header p, .menu-ancres a {/**Informations dans le header : ""En plein centre ..." et "Plus de 500 logements ..." **/
+header p, .menu-principal a {/**Informations dans le header : ""En plein centre ..." et "Plus de 500 logements ..." **/
     font-size: 16px;
     font-weight: 400;
     line-height: 18.78px;
@@ -137,14 +137,14 @@ a {
     height: 19px;
 }
 
-.centrage-logo { 
+.logo { 
     display: flex;
     align-items : center;
 }
 
 /*logo-et-menu-principal : ancres*/
 
-.menu-ancres ul {
+.menu-principal ul {
     display: flex;
     gap: 68px;
     align-items:flex-end;
@@ -155,18 +155,18 @@ a {
     height:18.75px;
 }
 
-.menu-ancres-liste {
+.lien-ancre {
     display: flex;
     align-items: flex-end;
     border-top: 2px solid rgba(255, 255, 255, 0);
     border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 
-.menu-ancres-liste a {
+.lien-ancre a {
     padding-top: 21px; 
 }
 
-.menu-ancres-liste a:hover {
+.lien-ancre a:hover {
     color: var(--couleur-principale);
     border-top: 2px solid var(--couleur-principale);
 }
@@ -218,6 +218,9 @@ a {
     }
 
 #btn-rechercher1 { /* bouton visible uniquement hors mode mobile*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 18px;
     font-weight: 700;
     color:#ffffff;
@@ -226,9 +229,7 @@ a {
     border: 1px;
     border-radius: 0px 15px 15px 0px;
     background-color: var(--couleur-principale);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 #btn-rechercher2 { /* bouton visible uniquement en mode mobile*/
@@ -262,7 +263,7 @@ a {
 
 /**Barre des filtres**/
 
-.rubrique-filtres {
+.container-filtres {
     display:flex;
     flex-direction: column;
     margin-top: 35px;
@@ -275,11 +276,11 @@ a {
     align-items: center;
 }
 
-.titre-filtre {
+.titre-filtres {
     margin-right: 15px;
 }
 
-.barre {
+.barre-filtres {
     display: flex;
     flex-direction: row;
     flex-wrap:nowrap;
@@ -287,7 +288,7 @@ a {
     column-gap: 15px;
 }
 
-.barre span {
+.barre-filtres span {
     margin-left: 5px;
 }
 

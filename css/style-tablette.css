@@ -11,17 +11,17 @@
     align-items: flex-start;
 }
 
-.titre-filtre h3 {
+.titre-filtres h3 {
     margin-top: 0px;
     margin-bottom: 14px;
 }
 
-.barre {
+.barre-filtres {
     display: flex;
     flex-direction: row;
 }
 
-.barre h4 {
+.barre-filtres h4 {
     font-size: 16px;
 }
 
