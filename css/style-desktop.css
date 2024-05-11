@@ -144,7 +144,7 @@ a {
 
 /*logo-et-menu-principal : ancres*/
 
-.menu-ancres {
+.menu-ancres ul {
     display: flex;
     gap: 68px;
     align-items:flex-end;
