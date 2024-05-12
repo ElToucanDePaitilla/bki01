@@ -1,3 +1,2 @@
-Créez la page d'accueil d'une agence de voyage avec HTML & CSS
-
-Ajout : nav pour ancres.
+Créez la page d'accueil d'une agence de voyage avec HTML & CSS.
+Ajouter ARIA

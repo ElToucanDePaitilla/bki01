@@ -28,7 +28,9 @@ body {
     --couleur-bordure-bouton: #D9D9D9;
     --couleur-bg-carte: #ffffff;
     --ombre-carte: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    --ombre-loupe: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.250));;
+    --ombre-loupe: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.250));
+    box-sizing: border-box;
+
 }
 
 /**************** Couleurs du sites: fin *****************/
