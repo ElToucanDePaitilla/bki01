@@ -46,7 +46,6 @@ body {
 
 .lien-ancre {
     display: block;
-    box-sizing: border-box;
     text-align: center;
     height: 60px;
     width: 100%;
@@ -95,7 +94,6 @@ h1 + p {
 .champs-rechercher {
     padding-right: 15px;
     text-align: center;
-    box-sizing: border-box;
     width: 100%;
     max-width: 230px;
     height: 49px;
@@ -137,8 +135,7 @@ h1 + p {
 .btn-filtre {
     display: flex;
     height: 40px;
-    width: 48%;
-    
+    width: 48%; 
     margin-left: 0px;
     margin-right: 0px;
     padding-top: 0px;
@@ -157,15 +154,12 @@ h1 + p {
 }
 
 .icone-info {
-    
     min-width: 24px;
 }
 
-.info {
+.info-dynamique {
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 /*************** RESPONSIVE: Hébergements, Populaires, Activités ********************/

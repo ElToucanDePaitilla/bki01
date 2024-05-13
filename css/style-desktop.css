@@ -1,6 +1,6 @@
 /*############################# GENERAL: début ###############################*/
 
-/***********  *** Préceptes généraux : début ***************/
+/************** Préceptes généraux : début ***************/
 
 * {
     font-family: 'Raleway', sans-serif;
@@ -330,7 +330,7 @@ a {
 
 /*Texte d'information situé après l'icône "i"*/
 
-.info { 
+.info-dynamique { 
     display:flex;
     flex-direction: row;
     justify-content:flex-start;
@@ -339,7 +339,7 @@ a {
     margin-bottom: 0px;
 }
 
-.info p {
+.info-dynamique p {
     margin-top: 35px;
     margin-bottom: 35px;
 }
