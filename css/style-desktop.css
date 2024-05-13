@@ -12,7 +12,7 @@ body {
     justify-content: center;
 }
 
-.main-container {
+.main-conteneur {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
@@ -49,11 +49,10 @@ h2 {/**Titres des sections**/
     line-height: 25.83px;
 }
 
-h3 {/**Titre de la barre des filtres, titres des rubriques du footer*//
+h3 {/**Titre de la barre des filtres, titres des rubriques du footer*/
     font-size: 18px;
     font-weight: 700;
     line-height: 21.13px;
-
 }
 
 h4 {/**Titre cartes**/
@@ -184,42 +183,44 @@ a {
 
 .barre-de-recherche {
     display:flex;
-    justify-content: flex-start;
     height: 50px;
+    justify-content: flex-start;
     margin-top: 35px;
 }
 
-#container-icone-maps {
+#conteneur-icone-maps {/*conteneur entourant l'icône Maps*/
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 50px;
     height: 49px;
-    border: 1px;
     border-radius: 15px 0px 0px 15px;
-    background-color: var(--couleur-bg-principale);  
+    background-color: var(--couleur-bg-principale);
+    box-sizing: border-box; 
 }
 
-#container-icone-maps i {
+#conteneur-icone-maps i {/*taille de l'icône Maps"*/
     font-size: 18px;
 }
 
 .champs-rechercher {
-    height: 45px;
+    height: 50px;
     border: 1px solid var(--couleur-bg-principale); 
     border-radius: 0px 0px 0px 0px;
     background-color: #ffffff;
+    width: 265px;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    color: #000000;
+    box-sizing: border-box;
+    padding-right: 78px;
 }
 
 #formulaire-de-recherche {
-    display: flex; 
-    }
+    display: flex;
+}
 
-#btn-rechercher1 { /* bouton visible uniquement hors mode mobile*/
+#btn-rechercher1 { /* bouton visible uniquement en mode desktop*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,45 +228,41 @@ a {
     font-weight: 700;
     color:#ffffff;
     width: 132px;
-    height: 49px;
+    height: 50px;
     border: 1px;
     border-radius: 0px 15px 15px 0px;
     background-color: var(--couleur-principale);
-    
+    box-sizing: border-box;
+    margin-left: -78px;
 }
 
 #btn-rechercher2 { /* bouton visible uniquement en mode mobile*/
-    display: none;
+    display: none;/*Rend invisible le bouton*/
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    font-weight: 700;
     color:#ffffff;
-    width: 49px;
+    min-width: 50px;
     height: 49px;
     border: 1px;
     border-radius: 15px 15px 15px 15px;
     background-color: var(--couleur-principale);
-    
-    
+    margin-left: -30px;
+    filter:var(--ombre-loupe);
 }
 
-.fa-magnifying-glass {/*Icone loupe sur fond bleu*/
-    display: flex;
-    flex-grow: 0;
-    justify-content: center;
+.fa-magnifying-glass {/*Icone loupe*/
+    display: inline-block;
+    flex-direction: row;
+    justify-content:center;
     align-items: center;
-    background-color: var(--couleur-principale);    
     border-radius: 15px;
-    min-width: 49px;
-    height: 49px;
-    margin-left: -15px;
-    filter:var(--ombre-loupe);
 }
 
 /**Barre des filtres**/
 
-.container-filtres {
+.conteneur-filtres {
     display:flex;
     flex-direction: column;
     margin-top: 35px;
@@ -350,7 +347,7 @@ a {
 /****** Hebergements et Populaires ***********/
 .hebergements-et-populaires {
     display: flex;
-    justify-content: space-between; /**commande espace entre les deux containers gris "Hébergements" et "Populaires";**/
+    justify-content: space-between; /**commande espace entre les deux conteneurs gris "Hébergements" et "Populaires";**/
     gap: 50px;
 }
 
