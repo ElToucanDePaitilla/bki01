@@ -56,8 +56,9 @@
 }
 
 .populaires-cartes {
-    width: auto;
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;  
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
@@ -65,11 +66,23 @@
 }
 
 .populaires-cartes a { 
-    width: calc(33% - 0px);
+    display:flex;
+    
+    min-width: 30%;
+    width: calc(33% - 30px);
+}
+
+.populaires-cartes article {
+    display: flex;
+    
+    width: 100%;
 }
 
 .populaires-cartes .carte {
-    min-height: 146px; 
+    display: flex;
+    flex-direction: row;
+    height: 136px;
+     
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;  
