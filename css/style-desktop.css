@@ -83,6 +83,10 @@ a {
     text-decoration: none;
 }
 
+nav ul li {
+    list-style: none;
+}
+
 ::placeholder {/**Texte permanant "Marseille, France" figurant dans le champs de recherche de la barre de recherche**/
     font-size: 18px;
     font-weight: 700;
@@ -102,10 +106,8 @@ a {
 }
 
 .afficher-plus {
-    padding-left: 36px;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21.13px;
 }
 
 /*****Titres, paragraphes, icones, liens: fin ******/
@@ -382,6 +384,12 @@ a {
     margin-left: 30px; 
 }
 
+.hebergements button {
+    all: unset;
+    margin-left: 30px;
+}
+
+
 /****** Hebergements cartes *****/
 
 .hebergements-cartes {
@@ -449,6 +457,11 @@ a {
     padding-right: 10px;
 }   
 
+.hebergements ul {
+    list-style-type: disc;
+}
+
+
 /****** Populaires: début ***********/
 
 .populaires {
@@ -488,7 +501,7 @@ a {
 
 .populaires-cartes .carte img {
     width: 33%;
-    max-width: 100%;
+    
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
