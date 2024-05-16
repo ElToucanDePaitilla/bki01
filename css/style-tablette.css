@@ -67,22 +67,20 @@
 
 .populaires-cartes a { 
     display:flex;
-    
     min-width: 30%;
     width: calc(33% - 30px);
 }
 
 .populaires-cartes article {
     display: flex;
-    
     width: 100%;
 }
 
 .populaires-cartes .carte {
     display: flex;
     flex-direction: row;
-    height: 136px;
-     
+    min-height: 136px;
+    height: auto;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;  
