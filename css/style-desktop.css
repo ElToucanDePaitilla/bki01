@@ -30,7 +30,6 @@ body {
     --ombre-carte: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     --ombre-loupe: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.250));
     box-sizing: border-box;
-
 }
 
 /**************** Couleurs du sites: fin *****************/
@@ -103,11 +102,6 @@ nav ul li {
 
 .neutral-star {
     color: var(--couleur-bg-principale)
-}
-
-.afficher-plus {
-    font-size: 18px;
-    font-weight: 700;
 }
 
 /*****Titres, paragraphes, icones, liens: fin ******/
@@ -371,14 +365,6 @@ nav ul li {
     width: calc(29% - 20px);  
 }
 
-.hebergements nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100%;
-    min-height: calc(21.118px + 60px);
-}
-
 .hebergements h2 {
     margin-top: 30px;
     margin-left: 30px; 
@@ -387,8 +373,21 @@ nav ul li {
 .hebergements button {
     all: unset;
     margin-left: 30px;
+    width: 100px;
+    cursor: pointer
 }
 
+.hebergements form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+#afficher-contenu-sup {
+   font-size: 18px;
+   font-weight: 700;
+}
 
 /****** Hebergements cartes *****/
 
@@ -456,11 +455,6 @@ nav ul li {
     margin-top: 6px;
     padding-right: 10px;
 }   
-
-.hebergements ul {
-    list-style-type: disc;
-}
-
 
 /****** Populaires: début ***********/
 
@@ -635,4 +629,3 @@ nav ul li {
 }
 
 /*############################# FOOTER: fin ################################*/
-

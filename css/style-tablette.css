@@ -1,6 +1,5 @@
 @media (max-width: 1024px) {/* Medium devices (tablets, less/equal than 1024px)*/
 
-
 /******************** RESPONSIVE: Header ************************/                          
 
 /**RESPONSIVE: Barre des filtres**/
@@ -45,9 +44,9 @@
     padding-bottom: 0px;  
 }
 
-.hebergements nav {
+.hebergements form {
+    height: 80px;
 }
-
 
 /*RESPONSIVE: Section populaires*/
 
@@ -99,7 +98,6 @@
 
 /*RESPONSIVE: Section activités*/
 
-
 /* activites-cartes */
 
 .activites-cartes a .carte { 
@@ -111,4 +109,3 @@
 }
 
 }
-
