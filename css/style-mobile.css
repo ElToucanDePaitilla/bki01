@@ -1,0 +1,281 @@
+@media (max-width: 768px) {/* Small devices (phones, less than 768px)*/ 
+      
+/*************************** RESPONSIVE: Header *****************************/
+
+/*RESPONSIVE: Marges de la page web*/
+
+body {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/*RESPONSIVE: main*/
+
+.main-conteneur {
+    padding: 0px 0px;
+}
+
+/*REPONSIVE: logo-nav*/
+
+.logo-et-menu-principal {
+    display:flex;
+    flex-direction: column;
+}
+
+.logo { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items : center;
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+
+/*REPONSIVE: Ancres*/
+
+.menu-principal ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-inline-start: 0px;/*!!!!!!!!!!!!!!!!!!*/
+    width: 100%;
+    gap: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.lien-ancre {
+    display: block;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 2px solid var(--couleur-bordure-bouton); 
+}
+
+.lien-ancre a {
+    margin-top: 0px;
+    padding-bottom: 20px;                   
+}
+
+.lien-ancre a:hover {/*couleur transparente)*/                              
+    border-top: 0px solid var(--couleur-principale);    
+}
+
+.lien-ancre:hover {
+    border-top: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid var(--couleur-principale);
+}
+
+/*RESPONSIVE : Titre site web et base line*/
+
+.titre-header {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 + p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*RESPONSIVE :Barre de recherche*/
+
+.barre-de-recherche {
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+
+.conteneur-icone-maps {
+    
+}
+
+.champs-rechercher {
+    padding-right: 50px;
+    width: 100%;
+}
+
+#btn-rechercher1 { /* En mode mobile, rend invisible le bouton 1*/   
+    display: none;
+}
+
+#btn-rechercher2 { /* En mode mobile, rend invisible le bouton 1*/   
+    display: flex;
+}
+
+/*RESPONSIVE :Barre des filtres*/
+
+.titre-filtres {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.titre-et-barre {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.barre-filtres {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 50px;
+    width: 100%;
+    row-gap: 20px;
+    column-gap: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+}
+
+.btn-filtre {
+    display: flex;
+    height: 40px;
+    width: 48%; 
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.btn-filtre h4 {
+    font-size: 14px;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.btn-filtre i {
+    font-size: 20px;
+    margin-left: -2px;
+}
+
+.icone-info {
+    min-width: 24px;
+}
+
+.info-dynamique {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*************** RESPONSIVE: Hébergements, Populaires, Activités ********************/
+
+/*RESPONSIVE: hébergements et populaires*/
+
+.hebergements-et-populaires {
+    flex-direction: column-reverse;
+    row-gap: 0px;
+}
+
+.hebergements-et-populaires .hebergements {
+    background-color:#ffffff;    
+}
+
+/*RESPONSIVE: Hébergements*/
+
+.hebergements-cartes {
+    flex-direction: column;
+    align-content: center;
+    row-gap: 15px;
+}
+
+.hebergements-cartes a {
+    width: 100%;
+}
+
+.hebergements-cartes a:last-of-type {
+    margin-bottom: 20px;
+}
+
+.hebergements-cartes .carte {
+    margin-bottom: 0px;
+}
+
+.hebergements-cartes nav {
+    display: flex;
+    height: 100%;
+    min-height: calc(21.118px + 60px);
+}
+
+/*RESPONSIVE: Populaires*/
+
+.populaires-cartes {
+    flex-direction: column;
+    padding: 0 0 30px 0;
+    row-gap: 15px;
+    width: 100%;
+}
+
+.populaires-cartes .carte {
+    margin: 0 20px 0 20px;
+}
+
+.populaires-cartes a {
+    width: 100%;
+    height: 146px;
+}
+
+section.populaires {
+    border-radius: 0px;
+}
+
+.hebergements form {
+    height: 15px;
+}
+
+/*RESPONSIVE: Activités*/
+
+/**activites**/
+
+.activites h2 {
+    padding-left: 15px;
+}
+
+/* activites-cartes */
+
+.activites-cartes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 15px;
+}
+
+.activites-cartes a {
+    display: flex;
+    align-items: stretch;
+    width: 100%;    
+}
+
+.activites-cartes article {
+    width: 100%;
+}
+
+.activites-cartes a .carte { 
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;    
+} 
+
+.activites-cartes img { 
+    height: 140px;
+    width: 100%;
+}
+
+/****************************** RESPONSIVE: Footer **********************************/
+
+.footer {
+    flex-direction: column;
+}
+
+.footer nav {
+    width: 100%;
+}
+
+.footer ul {
+    margin-left: 15px;
+}
+
+}
