@@ -15,11 +15,6 @@
     margin-bottom: 14px;
 }
 
-.barre-filtres {
-    display: flex;
-    flex-direction: row;
-}
-
 .barre-filtres h4 {
     font-size: 16px;
 }
@@ -29,10 +24,6 @@
 /*RESPONSIVE: Section hébergements*/
 
 .hebergements-et-populaires {
-    flex-direction: column;
-}
-
-.hebergements-et-populaires section {
     flex-direction: column;
 }
 
