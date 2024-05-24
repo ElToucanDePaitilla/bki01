@@ -86,7 +86,7 @@
   /*RESPONSIVE :Barre de recherche*/
 
   .barre-de-recherche {
-    justify-content: center;
+    justify-content: center; /**Esthétiquement, pour suivre le centrage de la nav supérieure, la "Barre de recherche" a été centrée; il est cependant possible de l'aligner à gauche en utilisant la valeur "flex-start au lieu de "center" **/
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -122,10 +122,8 @@
   }
 
   .barre-filtres {
-    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 50px;
     width: 100%;
     row-gap: 20px;
     column-gap: 10px;
@@ -136,18 +134,29 @@
 
   .btn-filtre {
     display: flex;
-    height: 40px;
+    font-size: 14px;
+    height: 50px;
     width: 48%;
     margin-left: 0px;
     margin-right: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  .btn-filtre span {
+    margin-left: 10px;
   }
 
   .btn-filtre h4 {
     font-size: 14px;
     overflow-wrap: break-word;
     hyphens: auto;
+  }
+
+  .cesure {
+    padding-right: 32px;/*Esthétiquement permet la cesure du titre du bouton "Familial" en même temps que celui "Nos pépites"*/
   }
 
   .btn-filtre i {
@@ -160,6 +169,7 @@
   }
 
   .info-dynamique {
+    margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
   }
