@@ -984,6 +984,10 @@ nav ul li {
     min-height: calc(21.118px + 60px);
   }
 
+  .hebergements button {
+    margin-left: 20px;
+  }
+
   /*RESPONSIVE: Populaires*/
 
   .populaires-titre {
@@ -1019,11 +1023,21 @@ nav ul li {
   /**activites**/
 
   .activites h2 {
-    padding-left: 15px;
+    padding-left: 5px;
     padding-top: 30px;
   }
 
   /* activites-cartes */
+
+  .activites {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+.activites h2 {
+  padding-left: 0px;
+  margin-left: 10px;
+}
 
   .activites-cartes {
     display: flex;
