@@ -1,0 +1,251 @@
+  /* === Hebergements et Populaires === */
+  
+  .hebergements-et-populaires {
+    display: flex;
+    justify-content: space-between; /*commande espace entre les deux conteneurs gris "Hébergements" et "Populaires"*/
+    gap: 50px;
+  }
+  
+  .hebergements-et-populaires section {
+    background-color: var(--couleur-bg-principale);
+    border-radius: 25px;
+  }
+  
+  /* === Hebergements === */
+ 
+  .hebergements {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+  }
+  
+  .hebergements a {
+    display: flex;
+    min-width: 29%;
+    width: calc(29% - 20px);
+  }
+  
+  .hebergements h2 {
+    margin-left: 35px;
+  }
+  
+  .hebergements button {
+    all: unset;
+    margin-left: 40px;
+    width: 100px;
+    cursor: pointer;
+  }
+  
+  .hebergements button:hover {
+    color: var(--couleur-principale);
+  }
+  
+  .hebergements form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #afficher-contenu-sup {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+/* === Hébergements cartes === */
+  
+  .hebergements-cartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .hebergements-cartes article {
+    display: flex;
+    width: 100%;
+  }
+  
+  .hebergements-cartes .carte {
+    display: flex;
+    margin-top: 0px;
+    min-height: 207.25px;
+    height: auto;
+    border-radius: 24px;
+    align-items: stretch;
+  }
+  
+  .hebergements-cartes a .carte {
+    display: flex;
+    flex-direction: column;
+    min-height: 207.25px;
+  }
+  
+  .hebergements-cartes style {
+    width: 100%;
+  }
+  
+  .hebergements-cartes img {
+    height: 124px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .hebergements-cartes .contenu-carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+  
+  .hebergements-cartes .titre-carte {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    padding-right: 10px;
+  }
+  
+  .hebergements .sous-titre-carte {
+    margin: 0;
+    padding-right: 10px;
+  }
+  
+  .hebergements-cartes .notation-carte {
+    margin-top: 6px;
+    padding-right: 10px;
+  }
+  
+  /* === Populaires === */
+  
+  .populaires {
+    width: 32%;
+    margin-top: 0px;
+  }
+  
+  .populaires-cartes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .populaires-titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .populaires-cartes .carte {
+    display: flex;
+    height: 146px;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+  }
+  
+  .populaires-cartes .carte img {
+    width: 33%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .populaires-cartes .contenu-carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 67%;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+  
+  .populaires h1 {
+    margin-bottom: 30px;
+  }
+  
+  .populaires-cartes .titre-carte {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    padding-right: 10px;
+  }
+  
+  .populaires-cartes .sous-titre-carte {
+    margin: 0;
+    padding-right: 10px;
+  }
+  
+  .populaires-cartes .notation-carte {
+    margin-bottom: 5px;
+    padding-right: 10px;
+  }
+  
+  .icone-size {
+    /*Taille de l'icone*/
+    font-size: 18px;
+  }
+  
+  /* === Activités-Marseille === */
+  
+  /*activites*/
+  
+  .activites {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  /*activites-cartes*/
+  
+  .activites-cartes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .activites-cartes a {
+    display: flex;
+    align-items: stretch;
+    min-width: 20%;
+    width: calc(25% - 30px);
+  }
+  
+  .activites-cartes article {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  .activites-cartes a .carte {
+    display: flex;
+    flex-direction: column;
+    min-height: 439px;
+    border-radius: 24px;
+    padding: 0px;
+  }
+  
+  .activites-cartes img {
+    height: 380px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .activites-cartes .titre-carte {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }

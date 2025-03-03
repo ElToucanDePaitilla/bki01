@@ -1,0 +1,59 @@
+* {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-conteneur {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+  }
+
+  h1 {
+    /*Titre du site web*/
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+  }
+  
+  h2 {
+    /*Titres des sections*/
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  h3 {
+    /*Titre de la barre des filtres, titres des rubriques du footer*/
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+  }
+  
+  h4 {
+    /*Titre cartes*/
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+  }
+  
+  .barre h4 {
+    /*Libellés des boutons filtres*/
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18.78px;
+  }
+  
+  p {
+    /*Texte des cartes*/
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.44px;
+  }
